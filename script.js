@@ -35,12 +35,12 @@ function _read_file(namafile) {
 
 function _collapse_folder(namafolder) {
     _POST(uri + '/' + namafolder, "folder", function(items) {
-        console.log(items);
+        // console.log(items);
         sidebardir.append(items);
     });
 }
 
 _POST(uri, "folder", function(data) {
-    console.log(data);
+    // console.log(data);
     document.getElementById('dir-item').innerHTML = data;
 });
