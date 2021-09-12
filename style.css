@@ -1,0 +1,35 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu Bar */
+#menu-bar {
+    width: 100%;
+    background-color: gold;
+    position: absolute;
+}
+
+/* Sidebar File */
+#sidebar-file {
+    width: 15%;
+    height: 100vh;
+    background-color: red;
+    float: left;
+    padding: 2rem 1rem;
+}
+
+/* Sidebar Content */
+#sidebar-content {
+    width: 80%;
+    height: 100vh;
+    background-color: teal;
+    float: right;
+}
+
+/* File Item */
+.file-item {
+    cursor: pointer;
+}
