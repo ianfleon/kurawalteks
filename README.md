@@ -1,0 +1,2 @@
+# kurawalteks
+Teks Editor Bahagia
