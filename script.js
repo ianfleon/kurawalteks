@@ -1,12 +1,13 @@
 console.log("KurawalTeks v0.1 dev\n-------");
 
-var uri = "E:/Reposaya/kurawalteks/fileku";
+var uri = "E:/Reposaya/kurawalteks/fileku/";
+var sidebardir = document.getElementById('dir-item');
 
 /* Mengambil Data Direktori */
-function _post(alamat) {
+function _POST(url, tipe, callback) {
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "dapur/get_file.php");
+    xhr.open("POST", "dapur/" + "kurawal_core.php", true);
 
     //Send the proper header information along with the request
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -15,19 +16,31 @@ function _post(alamat) {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             // Request finished. Do processing here.
             // console.log(this.responseText);
-            document.getElementById('dir-item').innerHTML = this.responseText;
+            callback(this.responseText);
         }
     }
 
-    // console.log(alamat);
+    // console.log(url);
 
-    xhr.send("folder=" + alamat);
+    xhr.send(tipe + "=" + encodeURI(url));
 
 }
 
 function _read_file(namafile) {
-    // _post(encodeURI(alamat+namafile));
-    console.log(namafile);
+    _POST(uri + namafile, "file", function(data) {
+        console.log(data);
+        document.getElementById('isi-content').innerHTML = data;
+    });
 }
 
-_post(encodeURI(uri));
+function _collapse_folder(namafolder) {
+    _POST(uri + '/' + namafolder, "folder", function(items) {
+        console.log(items);
+        sidebardir.append(items);
+    });
+}
+
+_POST(uri, "folder", function(data) {
+    console.log(data);
+    document.getElementById('dir-item').innerHTML = data;
+});

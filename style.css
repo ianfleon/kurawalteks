@@ -18,7 +18,6 @@
     height: 100vh;
     background-color: red;
     float: left;
-    padding: 2rem 1rem;
 }
 
 /* Sidebar Content */
@@ -29,7 +28,16 @@
     float: right;
 }
 
+#sidebar-file, #sidebar-content {
+    padding: 2rem 1rem;
+}
+
 /* File Item */
 .file-item {
     cursor: pointer;
+    background-color: yellow;
+}
+
+.folder {
+    background-color: aqua;
 }
