@@ -2,5 +2,7 @@
 Undescriptioin.
 
 ## To Do:
-- Read File
-- Membedakan file dan Folder
+- Mengambil data menggunakan XHttp [✔]
+- Looping folder dalam folder untuk menampilkan isinya [✔]
+- Sorting folder dan file [❔]
+- Pisahkan file handling [❔]
