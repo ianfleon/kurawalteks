@@ -1,8 +1,8 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 /* Handle Project Folder */
 if (isset($_POST['folder'])) {
@@ -42,11 +42,13 @@ if (isset($_POST['folder'])) {
 if (isset($_POST['file'])) {
     $file = $_POST['file'];
 
-    if (pathinfo($file)['extension'] == 'html' || pathinfo($file)['extension'] == 'html' || pathinfo($file)['extension'] == 'xml') {
-        echo htmlentities(file_get_contents($file));
-    } else {
-        echo file_get_contents($file);
-    }
+    // if (pathinfo($file)['extension'] == 'html' || pathinfo($file)['extension'] == 'html' || pathinfo($file)['extension'] == 'xml') {
+    //     echo htmlentities(file_get_contents($file));
+    // } else {
+    //     echo file_get_contents($file);
+    // }
+
+    echo file_get_contents($file);
 }
 
 /* Looping Folder dalam Folder */
