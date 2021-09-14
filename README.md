@@ -13,3 +13,7 @@ Undescriptioin.
 
 #### UI
 - Membuat UI sederhana [❔]
+- Syntax Highlight [❔]
+
+#### Fitur
+- Custom Tema [❔]
