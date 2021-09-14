@@ -57,3 +57,8 @@ function _simpan_file() {
 _POST(uri, "folder", "kurawal_core.php", function(data) {
     document.getElementById('dir-item').innerHTML = data;
 });
+
+/* Tentang Aplikasi */
+function _tentang() {
+    alert("KurawalTeks");
+}
