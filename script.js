@@ -27,8 +27,8 @@ function _POST(url, tipe, callback) {
 }
 
 function _read_file(namafile) {
-    _POST(uri + namafile, "file", function(data) {
-        console.log(data);
+    _POST(namafile, "file", function(data) {
+        console.log(namafile);
         document.getElementById('isi-content').innerHTML = data;
     });
 }
