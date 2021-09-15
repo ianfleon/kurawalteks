@@ -62,3 +62,9 @@ _POST(uri, "folder", "kurawal_core.php", function(data) {
 function _tentang() {
     alert("KurawalTeks");
 }
+
+function _tes() {
+    if(confirm("Perubahan belum disimpan. Ingin menyimpan?")) {
+        _simpan_file();
+    }
+}

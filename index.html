@@ -13,8 +13,8 @@
 <nav id="menu-bar">
     <ul>
         <li>
-            <a href="#" class="menu-bar-button" onclick="_simpan_file()">Simpan</a>
-            <a href="#" class="menu-bar-button" onclick="_tentang()">Tentang</a>
+            <button class="menu-bar-button" onclick="_simpan_file()">Simpan</button>
+            <button class="menu-bar-button" onclick="_tentang()">Tentang</button>
         </li>
     </ul>
 </nav>
@@ -30,7 +30,7 @@
     
     <!-- Sidebar Content -->
     <div id="sidebar-content">
-        <textarea id="isi-content" ></textarea>
+        <textarea id="isi-content" spellcheck="false" onchange="_tes()"></textarea>
     </div>
     <!-- End Sitebar Content -->
 </div>
