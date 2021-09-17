@@ -11,7 +11,7 @@
 /* Menu Bar */
 #menu-bar {
     width: 100%;
-    background-color: gold;
+    background-color: rgb(14, 14, 14);
     position: absolute;
     height: 25px;
     display: flex;
@@ -23,15 +23,21 @@
 #sidebar-file {
     width: 15%;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
+    border-right: 3px solid;
     float: left;
+}
+
+#dir-item {
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* Sidebar Content */
 #sidebar-content {
     width: 80%;
     height: 100vh;
-    background-color: teal;
+    /* background-color: teal; */
     float: right;
 }
 
@@ -40,6 +46,13 @@
     height: 100%;
     resize: none;
     padding: 1rem;
+    border: none;
+}
+
+#isi-content:active,
+#isi-content:focus {
+    border: none;
+    outline: none;
 }
 
 #sidebar-file, #sidebar-content {
