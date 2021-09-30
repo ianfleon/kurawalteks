@@ -109,3 +109,358 @@
 - 01:20:09.188 DEBUG: OnBrowserDestroyed()
 - 01:20:09.406 INFO: Ended application
 - 01:20:09.406 INFO: --------------------------------------------------------
+- 01:26:42.063 INFO: --------------------------------------------------------
+- 01:26:42.063 INFO: Started application
+- 01:26:42.063 INFO: Logging to: E:\Reposaya\kurawalteks\debug.log
+- 01:26:42.063 INFO: Log level = DEBUG4
+- 01:26:42.063 INFO: Starting Mongoose 3.9c web server
+- 01:26:42.063 INFO: WWW directory: E:\Reposaya\kurawalteks\www
+- 01:26:42.078 INFO: Index files: index.html,index.php
+- 01:26:42.078 INFO: CGI interpreter: E:\Reposaya\kurawalteks\php\php-cgi.exe
+- 01:26:42.078 INFO: CGI pattern: **.php$
+- 01:26:42.078 INFO: Hide files patterns: 
+- 01:26:42.078 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 01:26:42.078 INFO: Web server url: http://127.0.0.1:56901/
+- 01:26:42.078 INFO: remote_debugging_port = 58582
+- 01:26:42.078 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --remote-debugging-port=58582
+- 01:26:43.110 DEBUG: App::OnContextInitialized()
+- 01:26:43.110 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 01:26:43.110 DEBUG: Window max width/height = 1842/996
+- 01:26:43.110 DEBUG: GetBrowserWindow(): not found, hwnd = 330728
+- 01:26:43.110 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:26:43.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:26:43.125 DEBUG: StoreBrowserWindow(): hwnd = 330728
+- 01:26:43.000 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --service-request-channel-token=6F5E1D8B785B85B42A50F2068ECCAF39 --mojo-platform-channel-handle=1800 /prefetch:2
+- 01:26:43.157 DEBUG: ClientHandler::OnAfterCreated()
+- 01:26:43.157 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:26:43.172 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:26:43.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=AF06EBFBC1388EDA6E02444BB1382B44 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=AF06EBFBC1388EDA6E02444BB1382B44 --renderer-client-id=3 --mojo-platform-channel-handle=2388 /prefetch:1
+- 01:26:43.015 DEBUG: OnBrowserCreated()
+[1001/012643.132:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 01:26:43.250 INFO: GET 200 /
+- 01:26:43.282 INFO: GET 200 /style.css
+- 01:26:43.282 INFO: GET 200 /script.js
+- 01:26:43.094 DEBUG: OnContextCreated()
+[1001/012643.192:INFO:CONSOLE(1)] "KurawalTeks v0.1 dev
+-------", source: http://127.0.0.1:56901/script.js (1)
+- 01:26:43.313 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:26:43.328 INFO: POST 200 /dapur/kurawal_core.php
+- 01:26:46.985 INFO: POST 200 /dapur/kurawal_core.php
+- 01:27:00.516 INFO: POST 200 /dapur/kurawal_core.php
+- 01:27:01.657 INFO: POST 200 /dapur/kurawal_core.php
+- 01:28:05.360 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:28:05.203 DEBUG: OnContextCreated()
+- 01:28:05.391 INFO: GET 200 /script.js
+- 01:28:05.391 INFO: GET 200 /style.css
+- 01:28:05.391 INFO: GET 200 /
+[1001/012805.311:INFO:CONSOLE(1)] "KurawalTeks v0.1 dev
+-------", source: http://127.0.0.1:56901/script.js (1)
+- 01:28:05.407 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:28:05.438 INFO: POST 200 /dapur/kurawal_core.php
+- 01:28:56.688 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:28:56.531 DEBUG: OnContextCreated()
+- 01:28:56.719 INFO: GET 200 /style.css
+- 01:28:56.719 INFO: GET 200 /script.js
+- 01:28:56.719 INFO: GET 200 /
+- 01:28:56.735 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:28:56.766 INFO: POST 200 /dapur/kurawal_core.php
+- 01:28:57.063 INFO: POST 200 /dapur/kurawal_core.php
+[1001/012859.486:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012900.779:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012900.948:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012901.338:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012901.958:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.046:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.247:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.337:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.461:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.542:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.692:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.746:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012902.861:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012903.287:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012903.471:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012903.704:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012904.369:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012904.423:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012904.549:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012904.794:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.177:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.285:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.408:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.553:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.677:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012905.732:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012906.032:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012906.197:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+[1001/012906.357:INFO:CONSOLE(35)] "Uncaught ReferenceError: _tes is not defined", source: http://127.0.0.1:56901/ (35)
+- 01:29:10.938 DEBUG: ClientHandler::OnAfterCreated()
+- 01:29:10.938 DEBUG: GetBrowserWindow(): not found, hwnd = 1115792
+- 01:29:10.938 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:29:10.938 DEBUG: StoreBrowserWindow(): hwnd = 1115792
+- 01:29:10.938 DEBUG: Centering popup window relative to its parent
+- 01:29:10.953 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:29:10.016 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=6D5833A3A68970046CFBC2CF29E0E882 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6D5833A3A68970046CFBC2CF29E0E882 --renderer-client-id=4 --mojo-platform-channel-handle=3036 /prefetch:1
+- 01:29:10.031 DEBUG: OnBrowserCreated()
+- 01:29:10.047 DEBUG: OnContextCreated()
+- 01:29:11.110 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 01:29:11.250 INFO: GET 304 /style.css
+- 01:29:27.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:29:27.015 DEBUG: OnContextCreated()
+- 01:29:27.203 INFO: GET 200 /style.css
+- 01:29:27.203 INFO: GET 200 /script.js
+- 01:29:27.203 INFO: GET 200 /
+- 01:29:27.219 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:29:27.266 INFO: POST 200 /dapur/kurawal_core.php
+- 01:29:28.250 INFO: POST 200 /dapur/kurawal_core.php
+- 01:29:29.375 DEBUG: OnBeforeClose() hwnd=1115792
+- 01:29:29.375 DEBUG: RemoveBrowserWindow(): hwnd = 1115792
+- 01:29:29.406 DEBUG: OnBrowserDestroyed()
+- 01:29:33.641 INFO: POST 200 /dapur/simpan.php
+[1001/012933.546:INFO:CONSOLE(55)] "Berhasil disimpan: (E:/Reposaya/kurawalteks/www/fileku/belajar-js-dasar/portpholio.html)", source: http://127.0.0.1:56901/script.js (55)
+- 01:29:38.735 DEBUG: ClientHandler::OnAfterCreated()
+- 01:29:38.735 DEBUG: GetBrowserWindow(): not found, hwnd = 396198
+- 01:29:38.735 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:29:38.735 DEBUG: StoreBrowserWindow(): hwnd = 396198
+- 01:29:38.750 DEBUG: Centering popup window relative to its parent
+- 01:29:38.750 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:29:38.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=321E6A00042CA82BF40E93E56B3FFBB8 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=321E6A00042CA82BF40E93E56B3FFBB8 --renderer-client-id=5 --mojo-platform-channel-handle=3316 /prefetch:1
+- 01:29:38.015 DEBUG: OnBrowserCreated()
+- 01:29:38.031 DEBUG: OnContextCreated()
+- 01:29:38.907 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 01:29:38.000 INFO: GET 304 /style.css
+- 01:29:42.360 INFO: POST 200 /dapur/kurawal_core.php
+- 01:29:44.313 INFO: POST 200 /dapur/kurawal_core.php
+- 01:30:37.297 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:30:37.140 DEBUG: OnContextCreated()
+- 01:30:37.344 INFO: GET 200 /style.css
+- 01:30:37.344 INFO: GET 200 /js/script.js
+- 01:30:37.344 INFO: GET 200 /
+- 01:30:37.344 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:30:37.391 INFO: POST 200 /dapur/kurawal_core.php
+- 01:32:01.813 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:32:01.656 DEBUG: OnContextCreated()
+- 01:32:01.844 INFO: GET 200 /js/script.js
+- 01:32:01.844 INFO: GET 200 /
+- 01:32:01.844 INFO: GET 200 /style.css
+- 01:32:01.860 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:32:01.891 INFO: POST 200 /dapur/kurawal_core.php
+- 01:32:08.672 INFO: POST 200 /dapur/kurawal_core.php
+- 01:32:09.125 INFO: POST 200 /dapur/kurawal_core.php
+- 01:34:02.485 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:34:02.328 DEBUG: OnContextCreated()
+- 01:34:02.516 INFO: GET 200 /
+- 01:34:02.516 INFO: GET 200 /js/app.js
+- 01:34:02.516 INFO: GET 200 /js/script.js
+- 01:34:02.516 INFO: GET 200 /style.css
+- 01:34:02.532 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:34:02.563 INFO: POST 200 /dapur/kurawal_core.php
+- 01:34:03.016 DEBUG: OnBeforeClose() hwnd=396198
+- 01:34:03.016 DEBUG: RemoveBrowserWindow(): hwnd = 396198
+- 01:34:03.234 DEBUG: OnBrowserDestroyed()
+- 01:34:25.157 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:34:25.015 DEBUG: OnContextCreated()
+- 01:34:25.203 INFO: GET 200 /style.css
+- 01:34:25.203 INFO: GET 200 /js/app.js
+- 01:34:25.203 INFO: GET 200 /js/script.js
+- 01:34:25.203 INFO: GET 200 /
+- 01:34:25.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:34:25.250 INFO: POST 200 /dapur/kurawal_core.php
+- 01:35:24.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:35:24.562 DEBUG: OnContextCreated()
+- 01:35:24.766 INFO: GET 200 /style.css
+[1001/013524.675:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:35:24.766 INFO: GET 200 /js/script.js
+- 01:35:24.766 INFO: GET 200 /js/app.js
+- 01:35:24.766 INFO: GET 200 /
+- 01:35:24.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:35:24.813 INFO: POST 200 /dapur/kurawal_core.php
+- 01:35:26.172 DEBUG: ClientHandler::OnAfterCreated()
+- 01:35:26.172 DEBUG: GetBrowserWindow(): not found, hwnd = 789464
+- 01:35:26.172 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:35:26.188 DEBUG: StoreBrowserWindow(): hwnd = 789464
+- 01:35:26.188 DEBUG: Centering popup window relative to its parent
+- 01:35:26.188 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:35:26.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=F932BE46D6227E56A851483913DAE1F6 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F932BE46D6227E56A851483913DAE1F6 --renderer-client-id=6 --mojo-platform-channel-handle=3300 /prefetch:1
+- 01:35:26.016 DEBUG: OnBrowserCreated()
+- 01:35:26.031 DEBUG: OnContextCreated()
+- 01:35:26.360 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 01:36:50.828 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:36:50.672 DEBUG: OnContextCreated()
+- 01:36:50.875 INFO: GET 200 /
+- 01:36:50.875 INFO: GET 200 /style.css
+[1001/013650.784:INFO:CONSOLE(6)] "Uncaught SyntaxError: Invalid or unexpected token", source: http://127.0.0.1:56901/js/app.js (6)
+- 01:36:50.875 INFO: GET 200 /js/app.js
+- 01:36:50.875 INFO: GET 200 /js/script.js
+- 01:36:50.891 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:36:50.938 INFO: POST 200 /dapur/kurawal_core.php
+- 01:36:57.610 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:36:57.453 DEBUG: OnContextCreated()
+- 01:36:57.641 INFO: GET 200 /js/app.js
+- 01:36:57.641 INFO: GET 200 /
+[1001/013657.561:INFO:CONSOLE(6)] "Uncaught SyntaxError: Invalid or unexpected token", source: http://127.0.0.1:56901/js/app.js (6)
+- 01:36:57.641 INFO: GET 200 /js/script.js
+- 01:36:57.641 INFO: GET 200 /style.css
+- 01:36:57.657 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:36:57.703 INFO: POST 200 /dapur/kurawal_core.php
+- 01:37:05.032 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:37:05.875 DEBUG: OnContextCreated()
+[1001/013705.984:INFO:CONSOLE(6)] "Uncaught SyntaxError: Invalid or unexpected token", source: http://127.0.0.1:56901/js/app.js (6)
+- 01:37:05.078 INFO: GET 200 /js/app.js
+- 01:37:05.078 INFO: GET 200 /
+- 01:37:05.078 INFO: GET 200 /js/script.js
+- 01:37:05.063 INFO: GET 200 /style.css
+- 01:37:05.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:37:06.125 INFO: POST 200 /dapur/kurawal_core.php
+- 01:37:46.907 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:37:46.750 DEBUG: OnContextCreated()
+- 01:37:46.938 INFO: GET 200 /style.css
+- 01:37:46.938 INFO: GET 200 /js/app.js
+[1001/013746.856:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:37:46.938 INFO: GET 200 /js/script.js
+- 01:37:46.938 INFO: GET 200 /
+- 01:37:46.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:37:46.000 INFO: POST 200 /dapur/kurawal_core.php
+- 01:38:08.922 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:38:08.765 DEBUG: OnContextCreated()
+- 01:38:08.953 INFO: GET 200 /js/script.js
+- 01:38:08.953 INFO: GET 200 /
+- 01:38:08.953 INFO: GET 200 /js/app.js
+- 01:38:08.953 INFO: GET 200 /style.css
+[1001/013808.873:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:38:08.969 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:38:08.016 INFO: POST 200 /dapur/kurawal_core.php
+- 01:38:46.625 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:38:46.469 DEBUG: OnContextCreated()
+- 01:38:46.657 INFO: GET 200 /style.css
+- 01:38:46.657 INFO: GET 200 /js/app.js
+[1001/013846.577:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:38:46.657 INFO: GET 200 /js/script.js
+- 01:38:46.657 INFO: GET 200 /
+- 01:38:46.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:38:46.719 INFO: POST 200 /dapur/kurawal_core.php
+- 01:39:05.328 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:39:05.172 DEBUG: OnContextCreated()
+- 01:39:05.375 INFO: GET 200 /js/app.js
+- 01:39:05.375 INFO: GET 200 /style.css
+[1001/013905.284:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:39:05.375 INFO: GET 200 /
+- 01:39:05.375 INFO: GET 200 /js/script.js
+- 01:39:05.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:39:05.422 INFO: POST 200 /dapur/kurawal_core.php
+- 01:39:39.938 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:39:39.797 DEBUG: OnContextCreated()
+- 01:39:39.985 INFO: GET 200 /style.css
+[1001/013939.896:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:39:39.985 INFO: GET 200 /js/script.js
+- 01:39:39.985 INFO: GET 200 /js/app.js
+- 01:39:39.985 INFO: GET 200 /
+- 01:39:39.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:39:39.032 INFO: POST 200 /dapur/kurawal_core.php
+- 01:39:59.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:39:59.437 DEBUG: OnContextCreated()
+- 01:39:59.641 INFO: GET 200 /style.css
+- 01:39:59.641 INFO: GET 200 /js/app.js
+[1001/013959.550:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:39:59.641 INFO: GET 200 /
+- 01:39:59.641 INFO: GET 200 /js/script.js
+- 01:39:59.641 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:39:59.688 INFO: POST 200 /dapur/kurawal_core.php
+- 01:40:09.797 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:40:09.640 DEBUG: OnContextCreated()
+- 01:40:09.828 INFO: GET 200 /js/app.js
+[1001/014009.745:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:40:09.828 INFO: GET 200 /js/script.js
+- 01:40:09.828 INFO: GET 200 /style.css
+- 01:40:09.828 INFO: GET 200 /
+- 01:40:09.844 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:40:09.891 INFO: POST 200 /dapur/kurawal_core.php
+- 01:40:58.672 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:40:58.531 DEBUG: OnContextCreated()
+- 01:40:58.719 INFO: GET 200 /style.css
+- 01:40:58.719 INFO: GET 200 /js/script.js
+[1001/014058.631:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:40:58.719 INFO: GET 200 /
+- 01:40:58.719 INFO: GET 200 /js/app.js
+- 01:40:58.735 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:40:58.766 INFO: POST 200 /dapur/kurawal_core.php
+- 01:41:29.438 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:41:29.281 DEBUG: OnContextCreated()
+- 01:41:29.469 INFO: GET 200 /style.css
+- 01:41:29.469 INFO: GET 200 /js/script.js
+- 01:41:29.469 INFO: GET 200 /
+- 01:41:29.469 INFO: GET 200 /js/app.js
+[1001/014129.382:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:41:29.485 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:41:29.516 INFO: POST 200 /dapur/kurawal_core.php
+- 01:41:48.641 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:41:48.500 DEBUG: OnContextCreated()
+- 01:41:48.688 INFO: GET 200 /style.css
+- 01:41:48.688 INFO: GET 200 /js/app.js
+[1001/014148.599:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:41:48.688 INFO: GET 200 /js/script.js
+- 01:41:48.688 INFO: GET 200 /
+- 01:41:48.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:41:48.750 INFO: POST 200 /dapur/kurawal_core.php
+- 01:42:09.047 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:42:10.906 DEBUG: OnContextCreated()
+- 01:42:10.094 INFO: GET 200 /style.css
+- 01:42:10.094 INFO: GET 200 /js/app.js
+- 01:42:10.094 INFO: GET 200 /js/script.js
+[1001/014210.007:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:42:10.094 INFO: GET 200 /
+- 01:42:10.110 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:42:10.141 INFO: POST 200 /dapur/kurawal_core.php
+- 01:43:17.313 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:43:17.156 DEBUG: OnContextCreated()
+- 01:43:17.344 INFO: GET 200 /style.css
+- 01:43:17.344 INFO: GET 200 /js/app.js
+- 01:43:17.344 INFO: GET 200 /js/script.js
+[1001/014317.260:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:43:17.344 INFO: GET 200 /
+- 01:43:17.360 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:43:17.407 INFO: POST 200 /dapur/kurawal_core.php
+- 01:44:12.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:44:12.265 DEBUG: OnContextCreated()
+- 01:44:12.453 INFO: GET 200 /style.css
+[1001/014412.367:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:44:12.453 INFO: GET 200 /js/script.js
+- 01:44:12.453 INFO: GET 200 /js/app.js
+- 01:44:12.453 INFO: GET 200 /
+- 01:44:12.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:44:12.500 INFO: POST 200 /dapur/kurawal_core.php
+- 01:44:16.953 INFO: POST 200 /dapur/kurawal_core.php
+[1001/014416.868:INFO:CONSOLE(34)] "Uncaught TypeError: Cannot read property 'setAttribute' of null", source: http://127.0.0.1:56901/js/script.js (34)
+- 01:44:18.688 INFO: POST 200 /dapur/kurawal_core.php
+[1001/014418.602:INFO:CONSOLE(34)] "Uncaught TypeError: Cannot read property 'setAttribute' of null", source: http://127.0.0.1:56901/js/script.js (34)
+- 01:45:00.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:45:00.265 DEBUG: OnContextCreated()
+- 01:45:00.453 INFO: GET 200 /style.css
+- 01:45:00.453 INFO: GET 200 /js/app.js
+- 01:45:00.453 INFO: GET 200 /js/script.js
+- 01:45:00.453 INFO: GET 200 /
+[1001/014500.374:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:45:00.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:45:00.500 INFO: POST 200 /dapur/kurawal_core.php
+- 01:45:33.625 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:45:33.469 DEBUG: OnContextCreated()
+- 01:45:33.672 INFO: GET 200 /js/app.js
+- 01:45:33.672 INFO: GET 200 /style.css
+- 01:45:33.672 INFO: GET 200 /js/script.js
+- 01:45:33.672 INFO: GET 200 /
+[1001/014533.580:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:45:33.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:45:33.703 INFO: POST 200 /dapur/kurawal_core.php
+- 01:45:59.891 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:56901/
+- 01:45:59.734 DEBUG: OnContextCreated()
+- 01:45:59.938 INFO: GET 200 /style.css
+- 01:45:59.938 INFO: GET 200 /js/app.js
+- 01:45:59.938 INFO: GET 200 /js/script.js
+- 01:45:59.938 INFO: GET 200 /
+[1001/014559.847:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:56901/js/app.js (4)
+- 01:45:59.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:56901/
+- 01:45:59.985 INFO: POST 200 /dapur/kurawal_core.php
+- 01:48:08.813 DEBUG: OnBeforeClose() hwnd=7668166
+- 01:48:08.813 DEBUG: RemoveBrowserWindow(): hwnd = 7668166
+- 01:48:08.813 DEBUG: GetBrowserWindow(): not found, hwnd = 7668166
+- 01:48:08.813 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed

@@ -1,4 +1,4 @@
-console.log("KurawalTeks v0.1 dev\n-------");
+// console.log("KurawalTeks v0.1 dev\n-------");
 
 var uri = "E:/Reposaya/kurawalteks/www/fileku/";
 var sidebardir = document.getElementById('dir-item');
@@ -94,8 +94,5 @@ function _tentang() {
 
 function _tes() {
     document.getElementById('btn-simpan').removeAttribute('disabled');
-    // if(confirm("Perubahan belum disimpan. Ingin menyimpan?")) {
-    //     _simpan_file();
-    // }
 }
 
