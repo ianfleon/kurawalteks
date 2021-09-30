@@ -1,0 +1,111 @@
+- 01:17:55.063 INFO: --------------------------------------------------------
+- 01:17:55.063 INFO: Started application
+- 01:17:55.063 INFO: Logging to: E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 01:17:55.063 INFO: Log level = DEBUG4
+- 01:17:55.063 INFO: Starting Mongoose 3.9c web server
+- 01:17:55.063 INFO: WWW directory: E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\www
+- 01:17:55.063 INFO: Index files: index.html,index.php
+- 01:17:55.063 INFO: CGI interpreter: E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 01:17:55.063 INFO: CGI pattern: **.php$
+- 01:17:55.063 INFO: Hide files patterns: 
+- 01:17:55.063 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 01:17:55.063 INFO: Web server url: http://127.0.0.1:61772/
+- 01:17:55.063 INFO: remote_debugging_port = 53266
+- 01:17:55.063 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=53266
+- 01:17:55.125 DEBUG: App::OnContextInitialized()
+- 01:17:55.125 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 01:17:55.125 DEBUG: Window max width/height = 1842/996
+- 01:17:55.125 DEBUG: GetBrowserWindow(): not found, hwnd = 1246554
+- 01:17:55.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:17:55.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:17:55.125 DEBUG: StoreBrowserWindow(): hwnd = 1246554
+- 01:17:55.000 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=56EDCC9B9E8B97EF37C2CA2A24BE10AE --mojo-platform-channel-handle=1828 /prefetch:2
+- 01:17:55.157 DEBUG: ClientHandler::OnAfterCreated()
+- 01:17:55.157 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:17:55.172 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:17:55.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=63D7A8ABB6FC10B3C03FF359A7A75F29 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=63D7A8ABB6FC10B3C03FF359A7A75F29 --renderer-client-id=3 --mojo-platform-channel-handle=2416 /prefetch:1
+- 01:17:55.016 DEBUG: OnBrowserCreated()
+[1001/011755.439:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 01:17:55.516 INFO: GET 200 /style.css
+- 01:17:55.516 INFO: GET 200 /script.js
+- 01:17:55.516 INFO: GET 200 /
+- 01:17:55.313 DEBUG: OnContextCreated()
+[1001/011755.561:INFO:CONSOLE(1)] "KurawalTeks v0.1 dev
+-------", source: http://127.0.0.1:61772/script.js (1)
+- 01:17:55.563 INFO: POST 200 /dapur/kurawal_core.php
+- 01:17:55.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:61772/
+- 01:18:11.875 DEBUG: ClientHandler::OnAfterCreated()
+- 01:18:11.875 DEBUG: GetBrowserWindow(): not found, hwnd = 3148612
+- 01:18:11.875 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:18:11.875 DEBUG: StoreBrowserWindow(): hwnd = 3148612
+- 01:18:11.891 DEBUG: Centering popup window relative to its parent
+- 01:18:11.891 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:18:11.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=8ACDBF94A3A4350D4B054651D72E51B7 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=8ACDBF94A3A4350D4B054651D72E51B7 --renderer-client-id=4 --mojo-platform-channel-handle=2972 /prefetch:1
+- 01:18:11.031 DEBUG: OnBrowserCreated()
+- 01:18:11.031 DEBUG: OnContextCreated()
+- 01:18:12.078 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 01:18:12.188 INFO: GET 304 /style.css
+- 01:19:01.500 DEBUG: OnBeforeClose() hwnd=3148612
+- 01:19:01.500 DEBUG: RemoveBrowserWindow(): hwnd = 3148612
+- 01:19:01.578 DEBUG: OnBrowserDestroyed()
+- 01:19:01.500 DEBUG: WM_DESTROY
+- 01:19:01.500 DEBUG: RemoveBrowserWindow(): hwnd = 1246554
+- 01:19:01.500 INFO: Stopping Mongoose web server
+- 01:19:01.516 DEBUG: Mongoose webserver stopped immediately
+- 01:19:01.516 DEBUG: OnBeforeClose() hwnd=329606
+- 01:19:01.516 DEBUG: RemoveBrowserWindow(): hwnd = 329606
+- 01:19:01.516 DEBUG: GetBrowserWindow(): not found, hwnd = 329606
+- 01:19:01.516 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:19:01.516 DEBUG: Calling CefQuitMessageLoop()
+- 01:19:01.329 DEBUG: OnBrowserDestroyed()
+- 01:19:01.547 INFO: Ended application
+- 01:19:01.547 INFO: --------------------------------------------------------
+- 01:19:52.078 INFO: --------------------------------------------------------
+- 01:19:52.078 INFO: Started application
+- 01:19:52.078 INFO: Logging to: E:\Reposaya\kurawalteks\debug.log
+- 01:19:52.078 INFO: Log level = DEBUG4
+- 01:19:52.078 INFO: Starting Mongoose 3.9c web server
+- 01:19:52.094 INFO: WWW directory: E:\Reposaya\kurawalteks\www
+- 01:19:52.094 INFO: Index files: index.html,index.php
+- 01:19:52.094 INFO: CGI interpreter: E:\Reposaya\kurawalteks\php\php-cgi.exe
+- 01:19:52.094 INFO: CGI pattern: **.php$
+- 01:19:52.094 INFO: Hide files patterns: 
+- 01:19:52.094 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 01:19:52.094 INFO: Web server url: http://127.0.0.1:64813/
+- 01:19:52.094 INFO: remote_debugging_port = 57838
+- 01:19:52.094 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --remote-debugging-port=57838
+- 01:19:52.125 DEBUG: App::OnContextInitialized()
+- 01:19:52.125 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 01:19:52.125 DEBUG: Window max width/height = 1842/996
+- 01:19:52.125 DEBUG: GetBrowserWindow(): not found, hwnd = 265088
+- 01:19:52.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:19:52.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:19:52.125 DEBUG: StoreBrowserWindow(): hwnd = 265088
+- 01:19:52.015 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --service-request-channel-token=F5EEA760C73E805185B097549A537E94 --mojo-platform-channel-handle=1816 /prefetch:2
+- 01:19:52.172 DEBUG: ClientHandler::OnAfterCreated()
+- 01:19:52.172 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:19:52.187 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:19:53.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=D63CC6073BC938373FE55A5DE8D1F405 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D63CC6073BC938373FE55A5DE8D1F405 --renderer-client-id=3 --mojo-platform-channel-handle=2388 /prefetch:1
+[1001/011953.015:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 01:19:53.016 DEBUG: OnBrowserCreated()
+- 01:19:53.359 INFO: GET 200 /style.css
+- 01:19:53.359 INFO: GET 200 /script.js
+- 01:19:53.375 INFO: GET 200 /
+- 01:19:53.172 DEBUG: OnContextCreated()
+[1001/011953.172:INFO:CONSOLE(1)] "KurawalTeks v0.1 dev
+-------", source: http://127.0.0.1:64813/script.js (1)
+- 01:19:53.406 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:64813/
+- 01:19:53.422 INFO: POST 200 /dapur/kurawal_core.php
+- 01:19:56.000 INFO: POST 200 /dapur/kurawal_core.php
+- 01:20:09.375 DEBUG: WM_DESTROY
+- 01:20:09.375 DEBUG: RemoveBrowserWindow(): hwnd = 265088
+- 01:20:09.375 INFO: Stopping Mongoose web server
+- 01:20:09.375 DEBUG: Mongoose webserver stopped immediately
+- 01:20:09.375 DEBUG: OnBeforeClose() hwnd=787060
+- 01:20:09.375 DEBUG: RemoveBrowserWindow(): hwnd = 787060
+- 01:20:09.375 DEBUG: GetBrowserWindow(): not found, hwnd = 787060
+- 01:20:09.375 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:20:09.375 DEBUG: Calling CefQuitMessageLoop()
+- 01:20:09.188 DEBUG: OnBrowserDestroyed()
+- 01:20:09.406 INFO: Ended application
+- 01:20:09.406 INFO: --------------------------------------------------------
