@@ -464,3 +464,561 @@
 - 01:48:08.813 DEBUG: RemoveBrowserWindow(): hwnd = 7668166
 - 01:48:08.813 DEBUG: GetBrowserWindow(): not found, hwnd = 7668166
 - 01:48:08.813 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:49:24.062 INFO: --------------------------------------------------------
+- 01:49:24.062 INFO: Started application
+- 01:49:24.062 INFO: Logging to: E:\Reposaya\kurawalteks\debug.log
+- 01:49:24.062 INFO: Log level = DEBUG4
+- 01:49:24.062 INFO: Starting Mongoose 3.9c web server
+- 01:49:24.062 INFO: WWW directory: E:\Reposaya\kurawalteks\www
+- 01:49:24.062 INFO: Index files: index.html,index.php
+- 01:49:24.062 INFO: CGI interpreter: E:\Reposaya\kurawalteks\php\php-cgi.exe
+- 01:49:24.062 INFO: CGI pattern: **.php$
+- 01:49:24.062 INFO: Hide files patterns: 
+- 01:49:24.062 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 01:49:24.078 INFO: Web server url: http://127.0.0.1:52305/
+- 01:49:24.078 INFO: remote_debugging_port = 61718
+- 01:49:24.078 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --remote-debugging-port=61718
+- 01:49:24.125 DEBUG: App::OnContextInitialized()
+- 01:49:24.125 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 01:49:24.125 DEBUG: Window max width/height = 1842/996
+- 01:49:24.125 DEBUG: GetBrowserWindow(): not found, hwnd = 5441234
+- 01:49:24.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:49:24.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:49:24.125 DEBUG: StoreBrowserWindow(): hwnd = 5441234
+- 01:49:24.000 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --service-request-channel-token=014EBA378CEC66E136416A7AB6568FB8 --mojo-platform-channel-handle=1816 /prefetch:2
+- 01:49:24.171 DEBUG: ClientHandler::OnAfterCreated()
+- 01:49:24.171 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:49:24.171 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:49:24.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=793A3DC7642327E2A6D4BCC4696577FF --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=793A3DC7642327E2A6D4BCC4696577FF --renderer-client-id=3 --mojo-platform-channel-handle=2396 /prefetch:1
+[1001/014924.538:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 01:49:24.015 DEBUG: OnBrowserCreated()
+- 01:49:24.265 INFO: GET 200 /style.css
+- 01:49:24.265 INFO: GET 200 /js/app.js
+- 01:49:24.265 INFO: GET 200 /js/script.js
+- 01:49:24.265 INFO: GET 200 /
+- 01:49:24.062 DEBUG: OnContextCreated()
+[1001/014924.589:INFO:CONSOLE(4)] "[object HTMLElement]", source: http://127.0.0.1:52305/js/app.js (4)
+- 01:49:24.312 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:49:24.312 INFO: POST 200 /dapur/kurawal_core.php
+- 01:51:03.968 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:51:03.797 DEBUG: OnContextCreated()
+- 01:51:03.000 INFO: GET 200 /style.css
+- 01:51:03.000 INFO: GET 200 /js/app.js
+- 01:51:03.000 INFO: GET 200 /js/script.js
+- 01:51:03.000 INFO: GET 200 /
+- 01:51:03.015 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:51:03.046 INFO: POST 200 /dapur/kurawal_core.php
+- 01:51:30.484 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:51:30.312 DEBUG: OnContextCreated()
+- 01:51:30.515 INFO: GET 200 /js/app.js
+- 01:51:30.515 INFO: GET 200 /style.css
+- 01:51:30.515 INFO: GET 200 /js/script.js
+- 01:51:30.515 INFO: GET 200 /
+- 01:51:30.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:51:30.562 INFO: POST 200 /dapur/kurawal_core.php
+- 01:52:01.328 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:52:01.156 DEBUG: OnContextCreated()
+- 01:52:01.359 INFO: GET 200 /style.css
+- 01:52:01.359 INFO: GET 200 /js/app.js
+- 01:52:01.359 INFO: GET 200 /js/script.js
+- 01:52:01.359 INFO: GET 200 /
+[1001/015201.685:INFO:CONSOLE(13)] "undefined", source: http://127.0.0.1:52305/js/app.js (13)
+- 01:52:01.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:52:01.406 INFO: POST 200 /dapur/kurawal_core.php
+- 01:52:03.812 DEBUG: ClientHandler::OnAfterCreated()
+- 01:52:03.812 DEBUG: GetBrowserWindow(): not found, hwnd = 789466
+- 01:52:03.812 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:52:03.812 DEBUG: StoreBrowserWindow(): hwnd = 789466
+- 01:52:03.812 DEBUG: Centering popup window relative to its parent
+- 01:52:03.812 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:52:03.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=6F879D71F98FA7FE97E49C28CAFBD5B5 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6F879D71F98FA7FE97E49C28CAFBD5B5 --renderer-client-id=4 --mojo-platform-channel-handle=3004 /prefetch:1
+- 01:52:03.016 DEBUG: OnBrowserCreated()
+- 01:52:03.032 DEBUG: OnContextCreated()
+- 01:52:03.984 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 01:52:17.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:52:17.515 DEBUG: OnContextCreated()
+- 01:52:17.718 INFO: GET 200 /style.css
+- 01:52:17.718 INFO: GET 200 /js/app.js
+- 01:52:17.718 INFO: GET 200 /js/script.js
+- 01:52:17.734 INFO: GET 200 /
+[1001/015217.048:INFO:CONSOLE(13)] "1519", source: http://127.0.0.1:52305/js/app.js (13)
+- 01:52:17.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:52:17.781 INFO: POST 200 /dapur/kurawal_core.php
+- 01:52:31.781 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:52:31.609 DEBUG: OnContextCreated()
+- 01:52:31.812 INFO: GET 200 /style.css
+- 01:52:31.812 INFO: GET 200 /js/app.js
+- 01:52:31.812 INFO: GET 200 /js/script.js
+- 01:52:31.812 INFO: GET 200 /
+[1001/015231.136:INFO:CONSOLE(13)] "17", source: http://127.0.0.1:52305/js/app.js (13)
+- 01:52:31.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:52:31.859 INFO: POST 200 /dapur/kurawal_core.php
+- 01:52:35.781 INFO: POST 200 /dapur/kurawal_core.php
+- 01:53:42.093 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:53:42.922 DEBUG: OnContextCreated()
+- 01:53:42.140 INFO: GET 200 /style.css
+- 01:53:42.140 INFO: GET 200 /js/app.js
+- 01:53:42.140 INFO: GET 200 /js/script.js
+- 01:53:42.140 INFO: GET 200 /
+[1001/015342.455:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:53:42.140 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:53:42.203 INFO: POST 200 /dapur/kurawal_core.php
+- 01:54:10.625 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:54:10.468 DEBUG: OnContextCreated()
+- 01:54:10.671 INFO: GET 200 /style.css
+- 01:54:10.671 INFO: GET 200 /js/app.js
+- 01:54:10.671 INFO: GET 200 /js/script.js
+- 01:54:10.671 INFO: GET 200 /
+[1001/015410.989:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:54:10.671 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:54:11.718 INFO: POST 200 /dapur/kurawal_core.php
+- 01:54:53.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:54:53.531 DEBUG: OnContextCreated()
+- 01:54:53.734 INFO: GET 200 /
+- 01:54:53.734 INFO: GET 200 /style.css
+- 01:54:53.734 INFO: GET 200 /js/app.js
+- 01:54:53.734 INFO: GET 200 /js/script.js
+[1001/015453.055:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:54:53.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:54:53.781 INFO: POST 200 /dapur/kurawal_core.php
+- 01:56:32.546 DEBUG: OnBeforeClose() hwnd=789466
+- 01:56:32.546 DEBUG: RemoveBrowserWindow(): hwnd = 789466
+- 01:56:32.719 DEBUG: OnBrowserDestroyed()
+- 01:56:55.062 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:56:55.890 DEBUG: OnContextCreated()
+- 01:56:55.093 INFO: GET 200 /style.css
+- 01:56:55.093 INFO: GET 200 /
+- 01:56:55.093 INFO: GET 200 /js/script.js
+- 01:56:55.093 INFO: GET 200 /js/app.js
+[1001/015655.413:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:56:55.093 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:56:55.140 INFO: POST 200 /dapur/kurawal_core.php
+- 01:57:06.156 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:57:06.984 DEBUG: OnContextCreated()
+- 01:57:06.203 INFO: GET 200 /js/app.js
+- 01:57:06.203 INFO: GET 200 /style.css
+- 01:57:06.203 INFO: GET 200 /js/script.js
+- 01:57:06.203 INFO: GET 200 /
+[1001/015706.519:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:57:06.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:57:06.250 INFO: POST 200 /dapur/kurawal_core.php
+- 01:57:14.296 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:57:14.125 DEBUG: OnContextCreated()
+- 01:57:14.328 INFO: GET 200 /style.css
+- 01:57:14.328 INFO: GET 200 /js/app.js
+- 01:57:14.328 INFO: GET 200 /js/script.js
+- 01:57:14.343 INFO: GET 200 /
+[1001/015714.657:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:57:14.343 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:57:14.375 INFO: POST 200 /dapur/kurawal_core.php
+- 01:58:12.296 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:58:12.125 DEBUG: OnContextCreated()
+- 01:58:12.328 INFO: GET 200 /style.css
+- 01:58:12.328 INFO: GET 200 /js/app.js
+- 01:58:12.328 INFO: GET 200 /js/script.js
+- 01:58:12.328 INFO: GET 200 /
+[1001/015812.654:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:58:12.343 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:58:12.375 INFO: POST 200 /dapur/kurawal_core.php
+- 01:58:45.984 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:58:45.812 DEBUG: OnContextCreated()
+- 01:58:45.015 INFO: GET 200 /style.css
+- 01:58:45.015 INFO: GET 200 /js/app.js
+- 01:58:45.015 INFO: GET 200 /js/script.js
+- 01:58:45.015 INFO: GET 200 /
+[1001/015845.340:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:58:45.031 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:58:45.062 INFO: POST 200 /dapur/kurawal_core.php
+- 01:58:48.500 DEBUG: ClientHandler::OnAfterCreated()
+- 01:58:48.500 DEBUG: GetBrowserWindow(): not found, hwnd = 1969098
+- 01:58:48.500 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 01:58:48.500 DEBUG: StoreBrowserWindow(): hwnd = 1969098
+- 01:58:48.500 DEBUG: Centering popup window relative to its parent
+- 01:58:48.500 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:58:48.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=1CFBF0D92E82B2C3FCBAFC0FDA81F4EB --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=1CFBF0D92E82B2C3FCBAFC0FDA81F4EB --renderer-client-id=5 --mojo-platform-channel-handle=3728 /prefetch:1
+- 01:58:48.015 DEBUG: OnBrowserCreated()
+- 01:58:48.031 DEBUG: OnContextCreated()
+- 01:58:48.671 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+[1001/015854.398:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015856.063:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015859.401:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015904.264:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015910.632:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015911.575:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015913.393:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015917.028:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015918.512:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+- 01:59:32.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 01:59:32.750 DEBUG: OnContextCreated()
+- 01:59:32.953 INFO: GET 200 /style.css
+- 01:59:32.953 INFO: GET 200 /js/app.js
+- 01:59:32.953 INFO: GET 200 /js/script.js
+- 01:59:32.953 INFO: GET 200 /
+[1001/015932.272:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 01:59:32.968 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 01:59:32.000 INFO: POST 200 /dapur/kurawal_core.php
+[1001/015933.887:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015933.888:INFO:CONSOLE(22)] "762", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/015935.286:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015935.287:INFO:CONSOLE(22)] "762", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/015936.439:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015936.440:INFO:CONSOLE(22)] "762", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/015937.485:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/015937.485:INFO:CONSOLE(22)] "762", source: http://127.0.0.1:52305/js/app.js (22)
+- 02:00:04.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:00:04.906 DEBUG: OnContextCreated()
+- 02:00:04.125 INFO: GET 200 /style.css
+- 02:00:04.125 INFO: GET 200 /js/app.js
+- 02:00:04.125 INFO: GET 200 /js/script.js
+- 02:00:04.125 INFO: GET 200 /
+[1001/020004.441:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 02:00:04.125 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:00:04.171 INFO: POST 200 /dapur/kurawal_core.php
+[1001/020006.535:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020006.536:INFO:CONSOLE(22)] "846", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020007.303:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020007.303:INFO:CONSOLE(22)] "954", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020008.288:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020008.289:INFO:CONSOLE(22)] "1060", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020008.944:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020008.944:INFO:CONSOLE(22)] "576", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020014.103:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020014.103:INFO:CONSOLE(22)] "492", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020017.807:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020017.807:INFO:CONSOLE(22)] "298", source: http://127.0.0.1:52305/js/app.js (22)
+- 02:00:45.812 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:00:45.640 DEBUG: OnContextCreated()
+- 02:00:45.859 INFO: GET 200 /
+- 02:00:45.859 INFO: GET 200 /style.css
+- 02:00:45.859 INFO: GET 200 /js/app.js
+- 02:00:45.859 INFO: GET 200 /js/script.js
+[1001/020045.174:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 02:00:45.859 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:00:45.906 INFO: POST 200 /dapur/kurawal_core.php
+[1001/020046.814:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020046.815:INFO:CONSOLE(22)] "606", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020048.000:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020048.000:INFO:CONSOLE(22)] "874", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020048.847:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020048.848:INFO:CONSOLE(22)] "1002", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020049.807:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020049.807:INFO:CONSOLE(22)] "268", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020053.377:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020053.377:INFO:CONSOLE(22)] "536", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020054.320:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020054.320:INFO:CONSOLE(22)] "1306", source: http://127.0.0.1:52305/js/app.js (22)
+- 02:01:00.093 DEBUG: OnBeforeClose() hwnd=1969098
+- 02:01:00.093 DEBUG: RemoveBrowserWindow(): hwnd = 1969098
+- 02:01:00.562 DEBUG: OnBrowserDestroyed()
+[1001/020128.289:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020128.289:INFO:CONSOLE(22)] "536", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020131.767:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020131.768:INFO:CONSOLE(22)] "536", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020136.564:INFO:CONSOLE(21)] "200", source: http://127.0.0.1:52305/js/app.js (21)
+[1001/020136.565:INFO:CONSOLE(22)] "1306", source: http://127.0.0.1:52305/js/app.js (22)
+- 02:01:43.343 INFO: POST 200 /dapur/kurawal_core.php
+- 02:02:13.218 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:02:13.047 DEBUG: OnContextCreated()
+- 02:02:13.265 INFO: GET 200 /js/app.js
+- 02:02:13.265 INFO: GET 200 /style.css
+- 02:02:13.265 INFO: GET 200 /js/script.js
+- 02:02:13.265 INFO: GET 200 /
+[1001/020213.580:INFO:CONSOLE(16)] "200", source: http://127.0.0.1:52305/js/app.js (16)
+- 02:02:13.265 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:02:13.296 INFO: POST 200 /dapur/kurawal_core.php
+- 02:03:07.796 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:03:07.625 DEBUG: OnContextCreated()
+- 02:03:07.828 INFO: GET 200 /js/app.js
+- 02:03:07.828 INFO: GET 200 /style.css
+- 02:03:07.828 INFO: GET 200 /js/script.js
+- 02:03:07.828 INFO: GET 200 /
+[1001/020307.155:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:03:07.843 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:03:07.890 INFO: POST 200 /dapur/kurawal_core.php
+- 02:03:25.093 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:03:25.922 DEBUG: OnContextCreated()
+- 02:03:25.125 INFO: GET 200 /style.css
+- 02:03:25.125 INFO: GET 200 /js/script.js
+- 02:03:25.125 INFO: GET 200 /js/app.js
+- 02:03:25.125 INFO: GET 200 /
+[1001/020325.446:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:03:25.125 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:03:25.171 INFO: POST 200 /dapur/kurawal_core.php
+- 02:03:34.187 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:03:34.015 DEBUG: OnContextCreated()
+- 02:03:34.218 INFO: GET 200 /style.css
+- 02:03:34.218 INFO: GET 200 /js/app.js
+- 02:03:34.218 INFO: GET 200 /js/script.js
+- 02:03:34.218 INFO: GET 200 /
+[1001/020334.542:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:03:34.234 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:03:34.265 INFO: POST 200 /dapur/kurawal_core.php
+- 02:03:47.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:03:47.281 DEBUG: OnContextCreated()
+- 02:03:47.484 INFO: GET 200 /style.css
+- 02:03:47.484 INFO: GET 200 /js/app.js
+- 02:03:47.484 INFO: GET 200 /js/script.js
+- 02:03:47.484 INFO: GET 200 /
+[1001/020347.806:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:03:47.484 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:03:47.531 INFO: POST 200 /dapur/kurawal_core.php
+- 02:04:36.171 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:04:36.000 DEBUG: OnContextCreated()
+- 02:04:36.203 INFO: GET 200 /style.css
+- 02:04:36.203 INFO: GET 200 /js/app.js
+- 02:04:36.203 INFO: GET 200 /js/script.js
+- 02:04:36.203 INFO: GET 200 /
+[1001/020436.527:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:04:36.218 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:04:36.250 INFO: POST 200 /dapur/kurawal_core.php
+- 02:04:52.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:04:52.750 DEBUG: OnContextCreated()
+- 02:04:52.953 INFO: GET 200 /style.css
+- 02:04:52.953 INFO: GET 200 /js/app.js
+- 02:04:52.953 INFO: GET 200 /js/script.js
+- 02:04:52.953 INFO: GET 200 /
+[1001/020452.271:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:04:52.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:04:52.000 INFO: POST 200 /dapur/kurawal_core.php
+[1001/020458.186:INFO:CONSOLE(22)] "200", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020458.187:INFO:CONSOLE(23)] "526", source: http://127.0.0.1:52305/js/app.js (23)
+[1001/020503.900:INFO:CONSOLE(22)] "200", source: http://127.0.0.1:52305/js/app.js (22)
+[1001/020503.900:INFO:CONSOLE(23)] "1296", source: http://127.0.0.1:52305/js/app.js (23)
+- 02:05:08.265 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:05:08.109 DEBUG: OnContextCreated()
+- 02:05:08.312 INFO: GET 200 /style.css
+- 02:05:08.312 INFO: GET 200 /js/app.js
+- 02:05:08.312 INFO: GET 200 /js/script.js
+- 02:05:08.312 INFO: GET 200 /
+[1001/020508.629:INFO:CONSOLE(17)] "200", source: http://127.0.0.1:52305/js/app.js (17)
+- 02:05:08.312 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:05:08.359 INFO: POST 200 /dapur/kurawal_core.php
+- 02:05:51.656 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:05:52.484 DEBUG: OnContextCreated()
+- 02:05:52.687 INFO: GET 200 /style.css
+- 02:05:52.687 INFO: GET 200 /js/app.js
+- 02:05:52.687 INFO: GET 200 /js/script.js
+- 02:05:52.687 INFO: GET 200 /
+- 02:05:52.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:05:52.734 INFO: POST 200 /dapur/kurawal_core.php
+- 02:06:00.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:06:00.422 DEBUG: OnContextCreated()
+- 02:06:00.625 INFO: GET 200 /style.css
+- 02:06:00.625 INFO: GET 200 /js/app.js
+- 02:06:00.625 INFO: GET 200 /js/script.js
+- 02:06:00.625 INFO: GET 200 /
+- 02:06:00.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:06:00.671 INFO: POST 200 /dapur/kurawal_core.php
+- 02:06:25.890 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:06:25.734 DEBUG: OnContextCreated()
+- 02:06:25.953 INFO: GET 200 /style.css
+- 02:06:25.953 INFO: GET 200 /js/app.js
+- 02:06:25.953 INFO: GET 200 /js/script.js
+- 02:06:25.953 INFO: GET 200 /
+- 02:06:25.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:06:25.984 INFO: POST 200 /dapur/kurawal_core.php
+- 02:07:01.109 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:07:01.937 DEBUG: OnContextCreated()
+- 02:07:01.140 INFO: GET 200 /style.css
+- 02:07:01.156 INFO: GET 200 /js/app.js
+- 02:07:01.156 INFO: GET 200 /js/script.js
+- 02:07:01.156 INFO: GET 200 /
+- 02:07:01.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:07:01.187 INFO: POST 200 /dapur/kurawal_core.php
+- 02:07:14.312 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:07:14.140 DEBUG: OnContextCreated()
+- 02:07:14.343 INFO: GET 200 /style.css
+- 02:07:14.343 INFO: GET 200 /js/app.js
+- 02:07:14.343 INFO: GET 200 /js/script.js
+- 02:07:14.343 INFO: GET 200 /
+- 02:07:14.359 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:07:14.390 INFO: POST 200 /dapur/kurawal_core.php
+- 02:07:50.218 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:07:50.047 DEBUG: OnContextCreated()
+- 02:07:50.250 INFO: GET 200 /style.css
+- 02:07:50.250 INFO: GET 200 /js/app.js
+- 02:07:50.250 INFO: GET 200 /js/script.js
+- 02:07:50.250 INFO: GET 200 /
+- 02:07:50.265 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:07:50.296 INFO: POST 200 /dapur/kurawal_core.php
+- 02:08:00.968 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:08:00.812 DEBUG: OnContextCreated()
+- 02:08:00.015 INFO: GET 200 /style.css
+- 02:08:00.015 INFO: GET 200 /js/app.js
+- 02:08:00.015 INFO: GET 200 /js/script.js
+- 02:08:00.015 INFO: GET 200 /
+- 02:08:00.015 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:08:00.062 INFO: POST 200 /dapur/kurawal_core.php
+- 02:09:23.390 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:09:23.218 DEBUG: OnContextCreated()
+- 02:09:23.437 INFO: GET 200 /style.css
+- 02:09:23.437 INFO: GET 200 /js/app.js
+- 02:09:23.437 INFO: GET 200 /js/script.js
+- 02:09:23.437 INFO: GET 200 /
+- 02:09:23.437 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:09:23.468 INFO: POST 200 /dapur/kurawal_core.php
+[1001/020924.835:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+[1001/020941.762:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+[1001/020944.880:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+[1001/020947.114:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+[1001/020957.346:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+[1001/021001.474:INFO:CONSOLE(19)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (19)
+- 02:10:20.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:10:20.375 DEBUG: OnContextCreated()
+- 02:10:20.578 INFO: GET 200 /js/app.js
+- 02:10:20.578 INFO: GET 200 /style.css
+- 02:10:20.578 INFO: GET 200 /js/script.js
+- 02:10:20.578 INFO: GET 200 /
+- 02:10:20.578 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:10:20.625 INFO: POST 200 /dapur/kurawal_core.php
+[1001/021021.819:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+[1001/021026.754:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+- 02:10:53.046 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:10:53.875 DEBUG: OnContextCreated()
+- 02:10:53.078 INFO: GET 200 /style.css
+- 02:10:53.078 INFO: GET 200 /js/app.js
+- 02:10:53.078 INFO: GET 200 /js/script.js
+- 02:10:53.078 INFO: GET 200 /
+- 02:10:53.093 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:10:53.125 INFO: POST 200 /dapur/kurawal_core.php
+- 02:11:12.343 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:11:12.172 DEBUG: OnContextCreated()
+- 02:11:12.375 INFO: GET 200 /
+- 02:11:12.375 INFO: GET 200 /style.css
+- 02:11:12.375 INFO: GET 200 /js/app.js
+- 02:11:12.375 INFO: GET 200 /js/script.js
+- 02:11:12.390 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:11:12.421 INFO: POST 200 /dapur/kurawal_core.php
+- 02:11:28.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:11:28.375 DEBUG: OnContextCreated()
+- 02:11:28.578 INFO: GET 200 /style.css
+- 02:11:28.578 INFO: GET 200 /js/app.js
+- 02:11:28.578 INFO: GET 200 /js/script.js
+- 02:11:28.578 INFO: GET 200 /
+- 02:11:28.593 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:11:28.625 INFO: POST 200 /dapur/kurawal_core.php
+- 02:11:45.390 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:11:45.218 DEBUG: OnContextCreated()
+- 02:11:45.437 INFO: GET 200 /style.css
+- 02:11:45.437 INFO: GET 200 /js/app.js
+- 02:11:45.437 INFO: GET 200 /js/script.js
+- 02:11:45.437 INFO: GET 200 /
+- 02:11:45.437 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:11:45.484 INFO: POST 200 /dapur/kurawal_core.php
+- 02:12:05.187 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:12:05.015 DEBUG: OnContextCreated()
+- 02:12:05.218 INFO: GET 200 /style.css
+- 02:12:05.218 INFO: GET 200 /js/app.js
+- 02:12:05.218 INFO: GET 200 /js/script.js
+- 02:12:05.218 INFO: GET 200 /
+- 02:12:05.234 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:12:05.265 INFO: POST 200 /dapur/kurawal_core.php
+[1001/021209.249:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+[1001/021214.627:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+- 02:12:25.109 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:12:25.937 DEBUG: OnContextCreated()
+- 02:12:25.140 INFO: GET 200 /style.css
+- 02:12:25.140 INFO: GET 200 /js/app.js
+- 02:12:25.140 INFO: GET 200 /js/script.js
+- 02:12:25.140 INFO: GET 200 /
+- 02:12:25.140 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:12:25.187 INFO: POST 200 /dapur/kurawal_core.php
+[1001/021226.908:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+- 02:12:50.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:12:50.765 DEBUG: OnContextCreated()
+- 02:12:50.984 INFO: GET 200 /style.css
+- 02:12:50.984 INFO: GET 200 /js/app.js
+- 02:12:50.984 INFO: GET 200 /js/script.js
+- 02:12:50.984 INFO: GET 200 /
+- 02:12:50.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:12:50.015 INFO: POST 200 /dapur/kurawal_core.php
+- 02:13:01.171 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:13:01.000 DEBUG: OnContextCreated()
+- 02:13:01.203 INFO: GET 200 /style.css
+- 02:13:01.203 INFO: GET 200 /js/app.js
+- 02:13:01.203 INFO: GET 200 /js/script.js
+- 02:13:01.203 INFO: GET 200 /
+- 02:13:01.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:13:01.250 INFO: POST 200 /dapur/kurawal_core.php
+- 02:13:03.109 DEBUG: ClientHandler::OnAfterCreated()
+- 02:13:03.109 DEBUG: GetBrowserWindow(): not found, hwnd = 5245914
+- 02:13:03.109 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 02:13:03.109 DEBUG: StoreBrowserWindow(): hwnd = 5245914
+- 02:13:03.109 DEBUG: Centering popup window relative to its parent
+- 02:13:03.109 DEBUG: OnLoadingStateChange: loading=1, url=
+- 02:13:03.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=E737679566B706EB90F803250E26CCC1 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=E737679566B706EB90F803250E26CCC1 --renderer-client-id=6 --mojo-platform-channel-handle=3724 /prefetch:1
+- 02:13:03.031 DEBUG: OnBrowserCreated()
+- 02:13:03.031 DEBUG: OnContextCreated()
+- 02:13:03.281 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+[1001/021308.869:INFO:CONSOLE(20)] "Uncaught ReferenceError: righttpanel is not defined", source: http://127.0.0.1:52305/js/app.js (20)
+- 02:13:13.843 DEBUG: OnBeforeClose() hwnd=5245914
+- 02:13:13.843 DEBUG: RemoveBrowserWindow(): hwnd = 5245914
+- 02:13:13.703 DEBUG: OnBrowserDestroyed()
+- 02:13:48.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:13:48.797 DEBUG: OnContextCreated()
+- 02:13:48.000 INFO: GET 200 /style.css
+- 02:13:48.000 INFO: GET 200 /js/app.js
+- 02:13:48.000 INFO: GET 200 /js/script.js
+- 02:13:48.000 INFO: GET 200 /
+- 02:13:48.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:13:48.046 INFO: POST 200 /dapur/kurawal_core.php
+- 02:14:01.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:14:01.515 DEBUG: OnContextCreated()
+- 02:14:01.718 INFO: GET 200 /style.css
+- 02:14:01.718 INFO: GET 200 /js/app.js
+- 02:14:01.718 INFO: GET 200 /js/script.js
+- 02:14:01.718 INFO: GET 200 /
+- 02:14:01.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:14:01.765 INFO: POST 200 /dapur/kurawal_core.php
+- 02:14:22.718 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:14:22.547 DEBUG: OnContextCreated()
+- 02:14:22.750 INFO: GET 200 /style.css
+- 02:14:22.750 INFO: GET 200 /js/app.js
+- 02:14:22.750 INFO: GET 200 /js/script.js
+- 02:14:22.750 INFO: GET 200 /
+- 02:14:22.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:14:22.796 INFO: POST 200 /dapur/kurawal_core.php
+- 02:14:47.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:14:47.125 DEBUG: OnContextCreated()
+- 02:14:47.328 INFO: GET 200 /style.css
+- 02:14:47.328 INFO: GET 200 /js/app.js
+- 02:14:47.328 INFO: GET 200 /js/script.js
+- 02:14:47.328 INFO: GET 200 /
+- 02:14:47.328 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:14:47.375 INFO: POST 200 /dapur/kurawal_core.php
+- 02:15:01.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:15:01.750 DEBUG: OnContextCreated()
+- 02:15:01.953 INFO: GET 200 /style.css
+- 02:15:01.953 INFO: GET 200 /js/app.js
+- 02:15:01.953 INFO: GET 200 /js/script.js
+- 02:15:01.953 INFO: GET 200 /
+- 02:15:01.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:15:01.000 INFO: POST 200 /dapur/kurawal_core.php
+- 02:15:40.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:15:40.375 DEBUG: OnContextCreated()
+- 02:15:40.578 INFO: GET 200 /style.css
+- 02:15:40.578 INFO: GET 200 /js/app.js
+- 02:15:40.578 INFO: GET 200 /js/script.js
+- 02:15:40.578 INFO: GET 200 /
+- 02:15:40.593 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:15:40.625 INFO: POST 200 /dapur/kurawal_core.php
+- 02:15:48.921 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:15:48.750 DEBUG: OnContextCreated()
+- 02:15:48.953 INFO: GET 200 /js/app.js
+- 02:15:48.953 INFO: GET 200 /style.css
+- 02:15:48.953 INFO: GET 200 /js/script.js
+- 02:15:48.953 INFO: GET 200 /
+- 02:15:48.968 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:15:48.000 INFO: POST 200 /dapur/kurawal_core.php
+- 02:16:30.093 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52305/
+- 02:16:30.922 DEBUG: OnContextCreated()
+- 02:16:30.125 INFO: GET 200 /style.css
+- 02:16:30.125 INFO: GET 200 /js/app.js
+- 02:16:30.125 INFO: GET 200 /js/script.js
+- 02:16:30.125 INFO: GET 200 /
+- 02:16:30.140 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52305/
+- 02:16:30.171 INFO: POST 200 /dapur/kurawal_core.php
+- 02:16:39.296 DEBUG: OnBeforeClose() hwnd=1115616
+- 02:16:39.296 DEBUG: RemoveBrowserWindow(): hwnd = 1115616
+- 02:16:39.296 DEBUG: GetBrowserWindow(): not found, hwnd = 1115616
+- 02:16:39.296 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed

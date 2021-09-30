@@ -27,10 +27,10 @@
         <!-- End Sidebar File -->
 
         <!-- Sidebar Content -->
-        <!-- <div id="rightpanel">
+        <div id="rightpanel">
             <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste
                 oninput="_tes()"></textarea>
-        </div> -->
+        </div>
         <!-- End Sitebar Content -->
     </div>
 
