@@ -14,6 +14,7 @@
     <!-- Menu Bar -->
     <nav id="menu">
         <button class="menu-bar-button" id="btn-simpan" onclick="_simpan_file()" disabled>Simpan</button>
+        <input type="file" class="menu-bar-button" webkitdirectory multiple id="btn_open_project" />
         <button class="menu-bar-button" id="btn-tentang" onclick="_tentang()">Tentang</button>
     </nav>
     <!-- End Menu Bar -->
@@ -36,6 +37,8 @@
 
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/shortcut.js"></script>
 </body>
 
 </html>
