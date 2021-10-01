@@ -9,7 +9,7 @@
     overflow-y: scroll;
 }
 
-.file-item:hover {
+.dir-file:hover {
     cursor: pointer;
     background-color: rgb(207, 207, 207);
 }

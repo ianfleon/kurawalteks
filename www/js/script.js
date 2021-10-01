@@ -88,11 +88,6 @@ function _simpan_file() {
 
 }
 
-/* Tentang Aplikasi */
-function _tentang() {
-    alert("KurawalTeks");
-}
-
 function _tes() {
     document.getElementById('btn-simpan').removeAttribute('disabled');
 }
