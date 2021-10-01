@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KurawalTeks</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/leftpanel.css">
+    <link rel="stylesheet" href="css/rightpanel.css">
+</head>
 <body>
 
     <!-- Menu Bar -->
     <nav id="menu">
-        <button class="menu-bar-button" id="btn-simpan" onclick="_simpan_file()" disabled>Simpan</button>
-        <input type="file" class="menu-bar-button" webkitdirectory multiple id="btn_open_project" />
-        <button class="menu-bar-button" id="btn-tentang" onclick="_tentang()">Tentang</button>
+        <div class="menubar-button">
+            <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled/>
+            <label for="btn_simpan">Simpan</label>
+        </div>
+        <div class="menubar-button">
+            <input type="button" id="btn_tentang" onclick="_tentang()"/>
+            <label for="btn_tentang">Tentang</label>
+        </div>
+        <div class="menubar-button">
+            <input type="file" webkitdirectory multiple id="btn_open_project" />
+            <label for="btn_open_project">Open Folder</label>
+        </div>
     </nav>
-    <!-- End Menu Bar -->
+    <!-- // Menu Bar -->
 
     <!-- Container -->
     <div class="container">
-        <!-- Sidebar File -->
+
+        <!-- Left Panel -->
         <div id="leftpanel">
             <div id="dir-item"></div>
         </div>
-        <!-- End Sidebar File -->
+        <!-- // Left Panel -->
 
-        <!-- Sidebar Content -->
+        <!-- Right Panel -->
         <div id="rightpanel">
             <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste
                 oninput="_tes()"></textarea>
         </div>
-        <!-- End Sitebar Content -->
+        <!-- // Right Panel -->
     </div>
+    <!-- // Container -->
 
+    <!-- JS -->
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/shortcut.js"></script>
+    
 </body>
-
 </html>
