@@ -1,0 +1,20 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    border: none;
+}
+
+/* File Item */
+.file-item:hover {
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+}
+
+.folder {
+    /* background-color: rgb(235, 235, 235); */
+}
