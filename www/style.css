@@ -6,46 +6,7 @@
     text-decoration: none;
     color: #000;
     list-style: none;
-}
-
-/* Menu Bar */
-#menu {
-    width: 100%;
-    display: flex;
-    background-color: rgb(235, 235, 235);
-    align-items: center;
-    padding: 0 1rem;
-}
-
-/* Sidebar File */
-#leftpanel {
-    float: left;
-    /* background-color: salmon; */
-}
-
-#dir-item {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-/* Sidebar Content */
-#rightpanel {
-    float: right;
-}
-
-#isi-content {
-    width: 100%;
-    height: 99%;
-    resize: none;
     border: none;
-}
-
-#isi-content:active,
-#isi-content:focus {
-    border: none;
-    outline: none;
 }
 
 /* File Item */
