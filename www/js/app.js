@@ -17,6 +17,6 @@ rightpanel.style.height = window.outerHeight - menu_height + "px";
 window.addEventListener('resize', function() {
     leftpanel.style.height = window.outerHeight - menu_height + "px";
 
-    rightpanel.style.height = window.outerHeight;
+    rightpanel.style.height = window.outerHeight - menu_height + "px";
     rightpanel.style.width = window.outerWidth - (leftpanel.offsetWidth + 30) + "px";
 });

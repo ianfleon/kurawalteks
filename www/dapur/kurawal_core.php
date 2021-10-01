@@ -17,7 +17,7 @@ if (isset($_POST['folder'])) {
         $item_path = $folder . $my;
 
         if (is_dir($item_path)) {
-            echo '<div class=" folder">'.$my.'</div>';
+            echo '<ul class="folder">📂'.$my.'</ul>';
             _Loop_Folder($item_path, array_diff(scandir($item_path), ['.', '..']));
         }
         
@@ -28,7 +28,7 @@ if (isset($_POST['folder'])) {
         $item_path = $folder . $my;
 
         if (is_file($item_path)) {
-            echo '<div class="file-item" onclick="_read_file(this.id)" id="'.$item_path.'">'.$my.'</div>';
+            echo '<div class="file-item" onclick="_read_file(this.id)" id="'.$item_path.'">📄 '.$my.'</div>';
         }
         
     }
@@ -47,10 +47,10 @@ function _Loop_Folder($path, $data) {
         $filelok = $path . "/" . $d;
 
         if (is_dir($path ."/". $d)) {
-            echo "📂 Folder: " . $d;
+            echo "<ul>📂 " . $d . "</ul>";
             _Loop_Folder($path . "/" . $d, _CEK_DIR($path ."/". $d));
         } elseif(is_file($path ."/". $d)) {
-            echo '<div class="file-item" onclick="_read_file(this.id)" id="'.$filelok.'">'.$d.'</div>';
+            echo '<div class="file-item" onclick="_read_file(this.id)" id="'.$filelok.'">📄 '.$d.'</div>';
         }
     }
 }

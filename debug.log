@@ -1022,3 +1022,311 @@
 - 02:16:39.296 DEBUG: RemoveBrowserWindow(): hwnd = 1115616
 - 02:16:39.296 DEBUG: GetBrowserWindow(): not found, hwnd = 1115616
 - 02:16:39.296 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 02:17:59.172 INFO: --------------------------------------------------------
+- 02:17:59.172 INFO: Started application
+- 02:17:59.172 INFO: Logging to: E:\Reposaya\kurawalteks\debug.log
+- 02:17:59.172 INFO: Log level = DEBUG4
+- 02:17:59.172 INFO: Starting Mongoose 3.9c web server
+- 02:17:59.172 INFO: WWW directory: E:\Reposaya\kurawalteks\www
+- 02:17:59.172 INFO: Index files: index.html,index.php
+- 02:17:59.172 INFO: CGI interpreter: E:\Reposaya\kurawalteks\php\php-cgi.exe
+- 02:17:59.172 INFO: CGI pattern: **.php$
+- 02:17:59.172 INFO: Hide files patterns: 
+- 02:17:59.172 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 02:17:59.172 INFO: Web server url: http://127.0.0.1:50280/
+- 02:17:59.172 INFO: remote_debugging_port = 51194
+- 02:17:59.188 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --remote-debugging-port=51194
+- 02:17:59.250 DEBUG: App::OnContextInitialized()
+- 02:17:59.250 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 02:17:59.250 DEBUG: Window max width/height = 1842/996
+- 02:17:59.250 DEBUG: GetBrowserWindow(): not found, hwnd = 853582
+- 02:17:59.250 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 02:17:59.250 DEBUG: BrowserWindow::CreateBrowserControl()
+- 02:17:59.250 DEBUG: StoreBrowserWindow(): hwnd = 853582
+- 02:17:59.000 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --service-request-channel-token=935CEE2D5770F578918E27A360FFFF97 --mojo-platform-channel-handle=1796 /prefetch:2
+- 02:17:59.313 DEBUG: ClientHandler::OnAfterCreated()
+- 02:17:59.313 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 02:17:59.329 DEBUG: OnLoadingStateChange: loading=1, url=
+- 02:17:59.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=BA40268398559E8E23F2949EA90B1E2D --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=BA40268398559E8E23F2949EA90B1E2D --renderer-client-id=3 --mojo-platform-channel-handle=2324 /prefetch:1
+[1001/021759.877:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 02:17:59.031 DEBUG: OnBrowserCreated()
+- 02:17:59.485 INFO: GET 200 /style.css
+- 02:17:59.485 INFO: GET 200 /js/script.js
+- 02:17:59.485 INFO: GET 200 /js/app.js
+- 02:17:59.485 INFO: GET 200 /
+- 02:17:59.125 DEBUG: OnContextCreated()
+- 02:18:00.547 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:50280/
+- 02:18:00.610 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:03.797 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:05.547 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:05.047 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:06.579 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:07.922 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:08.547 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:08.329 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:09.250 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:15.657 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:15.485 INFO: POST 200 /dapur/kurawal_core.php
+- 02:18:23.110 INFO: POST 200 /dapur/kurawal_core.php
+- 02:19:02.860 DEBUG: WM_DESTROY
+- 02:19:02.860 DEBUG: RemoveBrowserWindow(): hwnd = 853582
+- 02:19:02.860 INFO: Stopping Mongoose web server
+- 02:19:02.860 DEBUG: Mongoose webserver stopped immediately
+- 02:19:02.875 DEBUG: OnBeforeClose() hwnd=1442606
+- 02:19:02.875 DEBUG: RemoveBrowserWindow(): hwnd = 1442606
+- 02:19:02.875 DEBUG: GetBrowserWindow(): not found, hwnd = 1442606
+- 02:19:02.875 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 02:19:02.875 DEBUG: Calling CefQuitMessageLoop()
+- 02:19:02.531 DEBUG: OnBrowserDestroyed()
+- 02:19:02.938 INFO: Ended application
+- 02:19:02.938 INFO: --------------------------------------------------------
+- 13:13:18.062 INFO: --------------------------------------------------------
+- 13:13:18.062 INFO: Started application
+- 13:13:18.062 INFO: Logging to: E:\Reposaya\kurawalteks\debug.log
+- 13:13:18.062 INFO: Log level = DEBUG4
+- 13:13:18.062 INFO: Starting Mongoose 3.9c web server
+- 13:13:18.062 INFO: WWW directory: E:\Reposaya\kurawalteks\www
+- 13:13:18.062 INFO: Index files: index.html,index.php
+- 13:13:18.078 INFO: CGI interpreter: E:\Reposaya\kurawalteks\php\php-cgi.exe
+- 13:13:18.078 INFO: CGI pattern: **.php$
+- 13:13:18.078 INFO: Hide files patterns: 
+- 13:13:18.078 INFO: CGI environment variables set: TMP=C:\Users\ASUS\AppData\Local\Temp\,TEMP=C:\Users\ASUS\AppData\Local\Temp\,TMPDIR=C:\Users\ASUS\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 13:13:18.078 INFO: Web server url: http://127.0.0.1:65381/
+- 13:13:18.078 INFO: remote_debugging_port = 53690
+- 13:13:18.078 DEBUG: Command line string for the browser process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --remote-debugging-port=53690
+- 13:13:18.125 DEBUG: App::OnContextInitialized()
+- 13:13:18.125 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 13:13:18.125 DEBUG: Window max width/height = 1842/996
+- 13:13:18.125 DEBUG: GetBrowserWindow(): not found, hwnd = 197258
+- 13:13:18.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 13:13:18.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 13:13:18.125 DEBUG: StoreBrowserWindow(): hwnd = 197258
+- 13:13:18.000 DEBUG: Command line string for the gpu-process process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3ea0 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8681 --gpu-driver-date=9-5-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1d11 --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --service-request-channel-token=F16DEE7C7952897E6F0941220E09A63D --mojo-platform-channel-handle=1824 /prefetch:2
+- 13:13:18.219 DEBUG: ClientHandler::OnAfterCreated()
+- 13:13:18.219 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 13:13:18.234 DEBUG: OnLoadingStateChange: loading=1, url=
+- 13:13:18.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=B5F15370B4BDFA92860742699B2AC205 --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=B5F15370B4BDFA92860742699B2AC205 --renderer-client-id=3 --mojo-platform-channel-handle=2424 /prefetch:1
+- 13:13:18.031 DEBUG: OnBrowserCreated()
+[1001/131318.981:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 13:13:18.547 INFO: GET 200 /
+- 13:13:19.640 INFO: GET 200 /style.css
+- 13:13:19.640 INFO: GET 200 /js/app.js
+- 13:13:19.640 INFO: GET 200 /js/script.js
+- 13:13:19.359 DEBUG: OnContextCreated()
+- 13:13:19.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:13:19.719 INFO: POST 200 /dapur/kurawal_core.php
+- 13:13:28.406 INFO: POST 200 /dapur/kurawal_core.php
+- 13:15:56.031 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:15:56.797 DEBUG: OnContextCreated()
+- 13:15:56.078 INFO: GET 200 /
+- 13:15:56.078 INFO: GET 200 /js/script.js
+- 13:15:56.078 INFO: GET 200 /style.css
+- 13:15:56.078 INFO: GET 200 /js/app.js
+- 13:15:56.094 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:15:56.125 INFO: POST 200 /dapur/kurawal_core.php
+- 13:16:32.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:16:32.328 DEBUG: OnContextCreated()
+- 13:16:32.625 INFO: GET 200 /style.css
+- 13:16:32.625 INFO: GET 200 /js/app.js
+- 13:16:32.625 INFO: GET 200 /js/script.js
+- 13:16:32.625 INFO: GET 200 /
+- 13:16:32.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:16:32.656 INFO: POST 200 /dapur/kurawal_core.php
+- 13:17:17.750 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:17:17.500 DEBUG: OnContextCreated()
+- 13:17:17.781 INFO: GET 200 /style.css
+- 13:17:17.781 INFO: GET 200 /js/script.js
+- 13:17:17.781 INFO: GET 200 /js/app.js
+- 13:17:17.781 INFO: GET 200 /
+- 13:17:17.797 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:17:17.828 INFO: POST 200 /dapur/kurawal_core.php
+- 13:17:38.219 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:17:38.984 DEBUG: OnContextCreated()
+- 13:17:38.265 INFO: GET 200 /style.css
+- 13:17:38.265 INFO: GET 200 /
+- 13:17:38.265 INFO: GET 200 /js/app.js
+- 13:17:38.265 INFO: GET 200 /js/script.js
+- 13:17:38.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:17:38.312 INFO: POST 200 /dapur/kurawal_core.php
+- 13:18:11.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:18:11.469 DEBUG: OnContextCreated()
+- 13:18:11.750 INFO: GET 200 /js/app.js
+- 13:18:11.750 INFO: GET 200 /style.css
+- 13:18:11.750 INFO: GET 200 /
+- 13:18:11.750 INFO: GET 200 /js/script.js
+- 13:18:11.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:18:11.797 INFO: POST 200 /dapur/kurawal_core.php
+- 13:18:47.219 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:18:47.984 DEBUG: OnContextCreated()
+- 13:18:47.265 INFO: GET 200 /style.css
+- 13:18:47.265 INFO: GET 200 /js/app.js
+- 13:18:47.265 INFO: GET 200 /js/script.js
+- 13:18:47.265 INFO: GET 200 /
+- 13:18:47.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:18:47.312 INFO: POST 200 /dapur/kurawal_core.php
+- 13:19:04.437 INFO: POST 200 /dapur/kurawal_core.php
+- 13:19:07.984 INFO: POST 200 /dapur/kurawal_core.php
+- 13:19:07.484 INFO: POST 200 /dapur/kurawal_core.php
+- 13:19:08.265 INFO: POST 200 /dapur/kurawal_core.php
+- 13:20:12.890 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:20:12.656 DEBUG: OnContextCreated()
+- 13:20:12.953 INFO: GET 200 /js/app.js
+- 13:20:12.953 INFO: GET 200 /
+- 13:20:12.953 INFO: GET 200 /style.css
+- 13:20:12.953 INFO: GET 200 /js/script.js
+- 13:20:12.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:20:12.000 INFO: POST 200 /dapur/kurawal_core.php
+- 13:20:24.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:20:24.281 DEBUG: OnContextCreated()
+- 13:20:25.562 INFO: GET 200 /js/app.js
+- 13:20:25.562 INFO: GET 200 /style.css
+- 13:20:25.562 INFO: GET 200 /js/script.js
+- 13:20:25.562 INFO: GET 200 /
+- 13:20:25.562 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:20:25.609 INFO: POST 200 /dapur/kurawal_core.php
+- 13:20:33.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:20:33.484 DEBUG: OnContextCreated()
+- 13:20:33.765 INFO: GET 200 /style.css
+- 13:20:33.765 INFO: GET 200 /js/app.js
+- 13:20:33.765 INFO: GET 200 /js/script.js
+- 13:20:33.765 INFO: GET 200 /
+- 13:20:33.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:20:33.812 INFO: POST 200 /dapur/kurawal_core.php
+- 13:20:35.578 INFO: POST 200 /dapur/kurawal_core.php
+- 13:20:58.765 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:20:58.516 DEBUG: OnContextCreated()
+- 13:20:58.797 INFO: GET 200 /js/app.js
+- 13:20:58.797 INFO: GET 200 /style.css
+- 13:20:58.797 INFO: GET 200 /
+- 13:20:58.797 INFO: GET 200 /js/script.js
+- 13:20:58.797 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:20:58.844 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:42.312 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:21:42.078 DEBUG: OnContextCreated()
+- 13:21:42.359 INFO: GET 200 /style.css
+- 13:21:42.359 INFO: GET 200 /js/app.js
+- 13:21:42.359 INFO: GET 200 /js/script.js
+- 13:21:42.359 INFO: GET 200 /
+- 13:21:42.359 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:21:42.406 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:44.765 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:45.625 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:45.156 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:46.562 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:46.172 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:47.578 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:47.984 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:47.437 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:48.797 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:48.203 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:49.594 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:49.000 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:49.469 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:50.953 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:51.609 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:51.031 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:52.719 INFO: POST 200 /dapur/kurawal_core.php
+- 13:21:52.297 INFO: POST 200 /dapur/kurawal_core.php
+- 13:22:59.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:22:59.688 DEBUG: OnContextCreated()
+- 13:22:59.969 INFO: GET 200 /style.css
+- 13:22:59.969 INFO: GET 200 /js/app.js
+- 13:22:59.969 INFO: GET 200 /
+- 13:22:59.969 INFO: GET 200 /js/script.js
+- 13:22:59.969 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:22:59.015 INFO: POST 200 /dapur/kurawal_core.php
+- 13:23:11.234 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:23:11.016 DEBUG: OnContextCreated()
+- 13:23:11.297 INFO: GET 200 /style.css
+- 13:23:11.297 INFO: GET 200 /js/app.js
+- 13:23:11.297 INFO: GET 200 /js/script.js
+- 13:23:11.297 INFO: GET 200 /
+- 13:23:11.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:23:11.344 INFO: POST 200 /dapur/kurawal_core.php
+- 13:23:12.500 DEBUG: ClientHandler::OnAfterCreated()
+- 13:23:12.500 DEBUG: GetBrowserWindow(): not found, hwnd = 787370
+- 13:23:12.500 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 13:23:12.515 DEBUG: StoreBrowserWindow(): hwnd = 787370
+- 13:23:12.515 DEBUG: Centering popup window relative to its parent
+- 13:23:12.515 DEBUG: OnLoadingStateChange: loading=1, url=
+- 13:23:12.000 DEBUG: Command line string for the renderer process: "E:\Reposaya\kurawalteks\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=D985430E4075D9FCC509912E48B2B25C --lang=en-US --lang=en-US --log-file="E:\Reposaya\kurawalteks\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D985430E4075D9FCC509912E48B2B25C --renderer-client-id=4 --mojo-platform-channel-handle=3696 /prefetch:1
+- 13:23:13.031 DEBUG: OnBrowserCreated()
+- 13:23:13.047 DEBUG: OnContextCreated()
+- 13:23:13.719 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 13:24:58.765 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:24:58.531 DEBUG: OnContextCreated()
+- 13:24:58.812 INFO: GET 200 /
+- 13:24:58.812 INFO: GET 200 /style.css
+- 13:24:58.812 INFO: GET 200 /js/script.js
+- 13:24:58.812 INFO: GET 200 /js/app.js
+- 13:24:58.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:24:58.859 INFO: POST 200 /dapur/kurawal_core.php
+- 13:25:04.047 INFO: POST 200 /dapur/kurawal_core.php
+- 13:25:44.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:25:44.938 DEBUG: OnContextCreated()
+- 13:25:44.219 INFO: GET 200 /style.css
+- 13:25:44.219 INFO: GET 200 /js/script.js
+- 13:25:44.219 INFO: GET 200 /
+- 13:25:44.219 INFO: GET 200 /js/app.js
+- 13:25:44.219 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:25:44.265 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:15.109 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:26:15.859 DEBUG: OnContextCreated()
+- 13:26:15.140 INFO: GET 200 /style.css
+- 13:26:15.140 INFO: GET 200 /js/app.js
+- 13:26:15.140 INFO: GET 200 /js/script.js
+- 13:26:15.140 INFO: GET 200 /
+- 13:26:15.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:26:15.219 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:17.422 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:18.375 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:19.687 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:46.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:26:46.172 DEBUG: OnContextCreated()
+- 13:26:46.453 INFO: GET 200 /style.css
+- 13:26:46.453 INFO: GET 200 /
+- 13:26:46.453 INFO: GET 200 /js/app.js
+- 13:26:46.453 INFO: GET 200 /js/script.js
+- 13:26:46.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:26:46.500 INFO: POST 200 /dapur/kurawal_core.php
+- 13:26:59.750 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:26:59.516 DEBUG: OnContextCreated()
+- 13:26:59.797 INFO: GET 200 /
+- 13:26:59.797 INFO: GET 200 /style.css
+- 13:26:59.797 INFO: GET 200 /js/app.js
+- 13:26:59.797 INFO: GET 200 /js/script.js
+- 13:26:59.812 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:26:59.844 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:13.859 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:27:13.625 DEBUG: OnContextCreated()
+- 13:27:13.906 INFO: GET 200 /
+- 13:27:13.906 INFO: GET 200 /style.css
+- 13:27:13.906 INFO: GET 200 /js/app.js
+- 13:27:13.906 INFO: GET 200 /js/script.js
+- 13:27:13.922 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:27:13.969 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:15.906 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:16.672 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:17.172 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:18.640 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:18.500 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:19.265 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:20.640 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:20.297 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:21.640 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:21.187 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:22.562 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:22.937 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:22.344 INFO: POST 200 /dapur/kurawal_core.php
+- 13:27:43.250 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65381/
+- 13:27:43.016 DEBUG: OnContextCreated()
+- 13:27:43.312 INFO: GET 200 /style.css
+- 13:27:43.312 INFO: GET 200 /js/app.js
+- 13:27:43.312 INFO: GET 200 /
+- 13:27:43.312 INFO: GET 200 /js/script.js
+- 13:27:43.328 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65381/
+- 13:27:43.359 INFO: POST 200 /dapur/kurawal_core.php
+- 13:28:51.609 DEBUG: OnBeforeClose() hwnd=328332
+- 13:28:51.609 DEBUG: RemoveBrowserWindow(): hwnd = 328332
+- 13:28:51.609 DEBUG: GetBrowserWindow(): not found, hwnd = 328332
+- 13:28:51.609 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed

@@ -20,7 +20,7 @@
 /* Sidebar File */
 #leftpanel {
     float: left;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
 
 #dir-item {
@@ -49,11 +49,11 @@
 }
 
 /* File Item */
-.file-item {
+.file-item:hover {
     cursor: pointer;
-    background-color: yellow;
+    background-color: rgb(207, 207, 207);
 }
 
 .folder {
-    background-color: aqua;
+    /* background-color: rgb(235, 235, 235); */
 }
