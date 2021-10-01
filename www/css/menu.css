@@ -1,0 +1,11 @@
+#menu {
+    width: 100%;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menubar-button input {
+    display: none;
+}
