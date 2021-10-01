@@ -10,7 +10,7 @@
         "log_file": "debug.log"
     },
     "main_window": {
-        "title": "PHP Desktop Chrome",
+        "title": "KurawalTeks",
         "icon": "",
         "default_size": [800, 600],
         "minimum_size": [640, 480],
