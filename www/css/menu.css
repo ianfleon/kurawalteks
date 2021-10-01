@@ -9,3 +9,13 @@
 .menubar-button input {
     display: none;
 }
+
+.btn {
+    cursor: pointer;
+    margin-right: 7px;
+    padding: 0 3px;
+}
+
+.btn:hover {
+    background-color: rgb(182, 182, 182);
+}

@@ -52,7 +52,8 @@ function _simpan_file() {
 
     xhr.onreadystatechange = function () {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            console.log(this.responseText);
+            // console.log(this.responseText);
+            new Popup("Berhasil disimpan");
             document.getElementById('btn-simpan').setAttribute('disabled', '');
         }
     }

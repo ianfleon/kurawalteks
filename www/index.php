@@ -7,10 +7,14 @@
     <title>KurawalTeks</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/leftpanel.css">
     <link rel="stylesheet" href="css/rightpanel.css">
+
+    <!-- Blank Style to Manipulate -->
+    <style></style>
+
 </head>
 <body>
 
@@ -18,15 +22,15 @@
     <nav id="menu">
         <div class="menubar-button">
             <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled/>
-            <label for="btn_simpan">Simpan</label>
+            <label for="btn_simpan" class="btn">Simpan</label>
         </div>
         <div class="menubar-button">
             <input type="button" id="btn_tentang" onclick="_tentang()"/>
-            <label for="btn_tentang">Tentang</label>
+            <label for="btn_tentang" class="btn">Tentang</label>
         </div>
         <div class="menubar-button">
             <input type="file" webkitdirectory multiple id="btn_open_project" />
-            <label for="btn_open_project">Open Folder</label>
+            <label for="btn_open_project" class="btn">Open Folder</label>
         </div>
     </nav>
     <!-- // Menu Bar -->
@@ -55,5 +59,7 @@
     <script src="js/menu.js"></script>
     <script src="js/shortcut.js"></script>
     
+    <!-- Komponen -->
+    <script src="komponen/popup.js"></script>
 </body>
 </html>
