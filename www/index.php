@@ -29,8 +29,10 @@
             <label for="btn_tentang" class="btn">Tentang</label>
         </div>
         <div class="menubar-button">
-            <input type="file" webkitdirectory multiple id="btn_open_project" />
-            <label for="btn_open_project" class="btn">Open Folder</label>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <input type="file" webkitdirectory dirname="" name="direktori" id="btn_open_project" />
+                <label for="btn_open_project" class="btn">Open Folder</label>
+            </form>
         </div>
     </nav>
     <!-- // Menu Bar -->
@@ -61,5 +63,6 @@
     
     <!-- Komponen -->
     <script src="komponen/popup.js"></script>
+
 </body>
 </html>
