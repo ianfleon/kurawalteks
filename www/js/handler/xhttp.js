@@ -1,20 +1,24 @@
-function __READ_DIR(dir) {
+function __READ_DIR(dir, callback) {
+
+    console.log(dir);
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open("POST", "dapur/baca_disk.php", true);
+    xhr.open("POST", "dapur/baca_folder.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
 
     xhr.onreadystatechange = function () {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            let hasil = this.response;
+            
+            /* Hasil Drive */
+            let hasil = this.responseText;
             hasil = JSON.parse(hasil);
-            delete hasil['.$key.'];
-            console.log(hasil);
+
+            callback(hasil, dir);
         }
     }
 
-    xhr.send('dir=' + dir);
+    xhr.send('dir=' + encodeURI(dir));
 
 }
 

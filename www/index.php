@@ -56,7 +56,7 @@
                 oninput="_tes()"></textarea>
         </div>
         <!-- // Right Panel -->
-    </div>
+    </div> 
     <!-- // Container -->
 
     <!-- JS -->

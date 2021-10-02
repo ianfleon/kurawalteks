@@ -24,7 +24,7 @@ function get_disks(){
 function read_drive()
 {
     $DIR_E = scandir("E:/");
-    return array_diff($DIR_E, ['System Volume Information', '$RECYCLE.BIN']);
+    return array_diff($DIR_E, ['.', '..', 'System Volume Information', '$RECYCLE.BIN', ]);
 }
 
 $disk_label = get_disks();
@@ -38,6 +38,7 @@ foreach ($disk_label as $i => $d) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,28 +50,46 @@ foreach ($disk_label as $i => $d) {
         cursor: pointer;
         margin-bottom: 1rem;
     }
-
 </style>
+
 <body>
     <ul>
         <?php foreach($disk_label as $disk) :?>
-        <li class="disk"><?= $disk ?></li>
+        <li class="disk" onclick="embed_folder(this, '<?= $disk?>')">💽<?= $disk ?></li>
         <?php endforeach; ?>
     </ul>
 
-    <ul class="folder">
+    <ul id="folder">
     </ul>
 
     <script src="js/handler/xhttp.js"></script>
     <script>
-        const disk = document.querySelectorAll('.disk');
-        disk.forEach(function(d) {
-            d.addEventListener('click', function() {
-                const letter = d.innerHTML;
-                __READ_DIR(letter);
+
+        function embed_folder(el, folders) {
+
+            // console.log(el);
+            
+            __READ_DIR(folders, function (data, dirnow) {
+
+                console.log(data);
+                console.log(dirnow);
+                
+                const keys = Object.keys(data);
+                const folder = document.getElementById('folder');
+
+                keys.forEach(k => {
+
+                    const folder_item = document.createElement('li');
+                    const folder_name = document.createTextNode('📁'+data[k]);
+                    folder_item.setAttribute("onclick", "embed_folder('"+dirnow+'/'+data[k]+"')");
+
+                    folder_item.appendChild(folder_name);
+                    el.appendChild(folder_item);
+                });
             });
-        });
+        }
     </script>
 
 </body>
+
 </html>
