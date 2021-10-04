@@ -64,27 +64,36 @@ foreach ($disk_label as $i => $d) {
 
     <script src="js/handler/xhttp.js"></script>
     <script>
-
+        const folder = document.getElementById('folder');
+        
         function embed_folder(el, folders) {
-
-            // console.log(el);
+            
+            console.log(el);
             
             __READ_DIR(folders, function (data, dirnow) {
 
-                console.log(data);
-                console.log(dirnow);
-                
                 const keys = Object.keys(data);
-                const folder = document.getElementById('folder');
+
+                // console.log(data);
+                // console.log(dirnow);
+
+
 
                 keys.forEach(k => {
 
                     const folder_item = document.createElement('li');
-                    const folder_name = document.createTextNode('📁'+data[k]);
-                    folder_item.setAttribute("onclick", "embed_folder('"+dirnow+'/'+data[k]+"')");
+                    const folder_name = document.createTextNode('📁' + data[k]);
+                    // folder_item.setAttribute("onclick", "embed_folder(this,'" + dirnow + '/' + data[k] +
+                    //     "')");
 
                     folder_item.appendChild(folder_name);
                     el.appendChild(folder_item);
+
+                    folder_item.addEventListener('click', function() {
+                        embed_folder(folder_item, dirnow + '/' + data[k]);
+                    });
+
+
                 });
             });
         }
