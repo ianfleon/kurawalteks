@@ -28,3 +28,12 @@
 .ml-1 {
     margin-left: 1rem;
 }
+
+.disk {
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}

@@ -45,57 +45,72 @@ foreach ($disk_label as $i => $d) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    .disk {
-        cursor: pointer;
-        margin-bottom: 1rem;
-    }
-</style>
+
+<link rel="stylesheet" href="css/style.css">
 
 <body>
-    <ul>
+    <div id="folder-wrapper">
         <?php foreach($disk_label as $disk) :?>
-        <li class="disk" onclick="embed_folder(this, '<?= $disk?>')">💽<?= $disk ?></li>
+        <div class="disk" onclick="embed_folder(this, '<?= $disk?>')" data-path="<?= $disk?>">💽<?= $disk ?></div>
         <?php endforeach; ?>
-    </ul>
-
-    <ul id="folder">
-    </ul>
+    </div>
 
     <script src="js/handler/xhttp.js"></script>
     <script>
-        const folder = document.getElementById('folder');
+
+        const folder = document.getElementById('folder-wrapper');
+        const disks = document.querySelectorAll('.disk');
+
+        // disks.forEach((disk)=>{
+        //     disk.addEventListener('click', ()=> {
+        //         embed_folder(disk, disk.dataset.path);
+        //     });
+        // });
+
+        function expand_dir(el) {
+            el.firstElementChild.classList.remove('hidden');
+            el.setAttribute('onclick', 'collapse_dir(this)');
+        }
+
+        function collapse_dir(el) {
+            el.firstElementChild.classList.add('hidden');
+            el.setAttribute('onclick', 'expand_dir(this)');
+        }
         
         function embed_folder(el, folders) {
-            
-            console.log(el);
+
+            el.setAttribute('onclick', 'collapse_dir(this)');
+            const wrap = document.createElement('div');
+            el.appendChild(wrap);
             
             __READ_DIR(folders, function (data, dirnow) {
 
                 const keys = Object.keys(data);
 
-                // console.log(data);
-                // console.log(dirnow);
-
-
-
                 keys.forEach(k => {
 
-                    const folder_item = document.createElement('li');
+                    const data_path = data[k];
+
+                    const folder_item = document.createElement('div');
                     const folder_name = document.createTextNode('📁' + data[k]);
-                    // folder_item.setAttribute("onclick", "embed_folder(this,'" + dirnow + '/' + data[k] +
-                    //     "')");
-
+                    
+                    folder_item.setAttribute('class', 'fi');
+                    folder_item.classList.add('ml-1');
+ 
                     folder_item.appendChild(folder_name);
-                    el.appendChild(folder_item);
+                    wrap.appendChild(folder_item);
 
-                    folder_item.addEventListener('click', function() {
-                        embed_folder(folder_item, dirnow + '/' + data[k]);
-                    });
+                    folder_item.setAttribute("onclick", "embed_folder(this, '" + dirnow +'/'+ data[k] + "')");
+
+                    // folder_item.addEventListener('click', function() {
+                    //     folder_item.setAttribute('onclick', 'collapse_dir()');
+                    //     embed_folder(folder_item, dirnow + '/' + data[k]);
+                    // });
 
 
                 });
             });
+
         }
     </script>
 
