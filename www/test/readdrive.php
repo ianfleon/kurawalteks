@@ -48,42 +48,46 @@ foreach ($disk_label as $i => $d) {
 
 <link rel="stylesheet" href="css/style.css">
 
-<body>
-    <div id="folder-wrapper">
-        <?php foreach($disk_label as $disk) :?>
-        <div class="disk" onclick="embed_folder(this, '<?= $disk?>')" data-path="<?= $disk?>">💽<?= $disk ?></div>
-        <?php endforeach; ?>
+<body onmousedown="return false" onselectstart="return false">
+
+    <button id="btn_dir_back">Back</button>
+    <button id="btn_dir_next">Next</button>
+
+    <div id="dir-wrapper">
+        <div id="disk-wrapper">
+            <?php foreach($disk_label as $disk) :?>
+            <div class="disk" data-path="<?= $disk?>">💽<?= $disk ?></div>
+            <?php endforeach; ?>
+        </div>
+        <div id="folder-wrapper"></div>
     </div>
 
     <script src="js/handler/xhttp.js"></script>
     <script>
 
-        const folder = document.getElementById('folder-wrapper');
+        const dir_wrapper = document.getElementById('dir-wrapper');
+        const folder_wrapper = document.getElementById('folder-wrapper');
         const disks = document.querySelectorAll('.disk');
 
-        // disks.forEach((disk)=>{
-        //     disk.addEventListener('click', ()=> {
-        //         embed_folder(disk, disk.dataset.path);
-        //     });
-        // });
-
-        function expand_dir(el) {
-            el.firstElementChild.classList.remove('hidden');
-            el.setAttribute('onclick', 'collapse_dir(this)');
-        }
-
-        function collapse_dir(el) {
-            el.firstElementChild.classList.add('hidden');
-            el.setAttribute('onclick', 'expand_dir(this)');
-        }
+        disks.forEach((disk)=>{
+            disk.addEventListener('click', ()=> {
+                embed_folder(disk, disk.dataset.path);
+            });
+        });
         
         function embed_folder(el, folders) {
-
-            el.setAttribute('onclick', 'collapse_dir(this)');
-            const wrap = document.createElement('div');
-            el.appendChild(wrap);
             
+            let back_dir = folders.split("/");
+            back_dir.pop();
+            back_dir = back_dir.join("/");
+            // console.log(back_dir);
+            
+            document.getElementById('btn_dir_back').setAttribute("onclick", "embed_folder(this, '" + back_dir +"')");
+
             __READ_DIR(folders, function (data, dirnow) {
+                
+
+                folder_wrapper.innerHTML = "";
 
                 const keys = Object.keys(data);
 
@@ -98,12 +102,19 @@ foreach ($disk_label as $i => $d) {
                     folder_item.classList.add('ml-1');
  
                     folder_item.appendChild(folder_name);
-                    wrap.appendChild(folder_item);
+                    folder_wrapper.appendChild(folder_item);
 
-                    folder_item.setAttribute("onclick", "embed_folder(this, '" + dirnow +'/'+ data[k] + "')");
+                    folder_item.setAttribute("ondblclick", "embed_folder(this, '" + dirnow +'/'+ data[k] + "')");
+
+                    folder_item.addEventListener('click', function() {
+                        folder_item.parentNode.childNodes.forEach(function(n) {
+                            n.classList.remove('fi-selected');
+                        });
+                        folder_item.classList.add('fi-selected');
+                    });
 
                     // folder_item.addEventListener('click', function() {
-                    //     folder_item.setAttribute('onclick', 'collapse_dir()');
+                    //     folder_item.setAttribute('ondblclick', 'collapse_dir()');
                     //     embed_folder(folder_item, dirnow + '/' + data[k]);
                     // });
 

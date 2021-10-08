@@ -1,6 +1,6 @@
 function __READ_DIR(dir, callback) {
 
-    console.log(dir);
+    // console.log(dir);
 
     const xhr = new XMLHttpRequest();
 
@@ -22,4 +22,4 @@ function __READ_DIR(dir, callback) {
 
 }
 
-console.log("xhttpJS");
+// console.log("xhttpJS");
