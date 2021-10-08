@@ -68,6 +68,7 @@ foreach ($disk_label as $i => $d) {
         const dir_wrapper = document.getElementById('dir-wrapper');
         const folder_wrapper = document.getElementById('folder-wrapper');
         const disks = document.querySelectorAll('.disk');
+        const btn_back_dir = document.getElementById('btn_dir_back');
 
         disks.forEach((disk)=>{
             disk.addEventListener('click', ()=> {
@@ -77,16 +78,21 @@ foreach ($disk_label as $i => $d) {
         
         function embed_folder(el, folders) {
             
-            let back_dir = folders.split("/");
-            back_dir.pop();
-            back_dir = back_dir.join("/");
-            // console.log(back_dir);
-            
-            document.getElementById('btn_dir_back').setAttribute("onclick", "embed_folder(this, '" + back_dir +"')");
-
             __READ_DIR(folders, function (data, dirnow) {
-                
 
+                let back_dir = dirnow.split("/");
+                back_dir.pop();
+                back_dir = back_dir.join("/");
+
+                if (back_dir != '' && back_dir.includes('/')) {
+                    btn_back_dir.setAttribute("onclick", "embed_folder(this, '" + back_dir +"')");
+                } else {
+                    btn_back_dir.onclick = function () {
+                        folder_wrapper.innerHTML = '';
+                        btn_back_dir.removeAttribute('onclick');
+                    }
+                }
+                
                 folder_wrapper.innerHTML = "";
 
                 const keys = Object.keys(data);
