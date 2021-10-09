@@ -47,6 +47,7 @@ foreach ($disk_label as $i => $d) {
 </head>
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/popwindow.css">
 
 <body onmousedown="return false" onselectstart="return false">
 

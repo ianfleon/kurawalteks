@@ -28,36 +28,3 @@
 .ml-1 {
     margin-left: 1rem;
 }
-
-.disk {
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
-
-.hidden {
-    display: none;
-}
-
-#dir-wrapper {
-    margin: auto;
-    width: 500px;
-    /* background-color: teal; */
-}
-
-#disk-wrapper {
-    width: 50px;
-    background-color: antiquewhite;
-}
-
-#folder-wrapper {
-    width: 400px;
-    background-color: red;
-}
-
-.fi {
-    cursor: pointer;
-}
-
-.fi.fi-selected {
-    background-color: antiquewhite;
-}

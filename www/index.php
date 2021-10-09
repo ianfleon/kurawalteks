@@ -1,7 +1,3 @@
-<?php require_once 'test/readdrive.php'; ?>
-
-<?php die(); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

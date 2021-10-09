@@ -1,0 +1,27 @@
+#dir-wrapper {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#disk-wrapper {
+    width: 20%;
+    background-color: blueviolet;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+#folder-wrapper {
+    width: 78%;
+    background-color: coral;
+}
+
+.disk-item {
+    text-align: center;
+    width: 100%;
+    background-color: azure;
+}
