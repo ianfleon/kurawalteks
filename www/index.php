@@ -46,6 +46,9 @@
         </div>
         <!-- // Left Panel -->
 
+        <!-- Resizer -->
+        <div id="resizer" onselectstart="return false" onmousedown="return false"></div>
+
         <!-- Right Panel -->
         <div id="rightpanel">
             <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste
@@ -63,6 +66,7 @@
     
     <!-- Komponen -->
     <script src="komponen/popup.js"></script>
+    <script src="js/resizer.js"></script>
 
 </body>
 </html>

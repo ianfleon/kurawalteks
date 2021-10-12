@@ -1,10 +1,10 @@
-const menu = document.getElementById('menu');
-const leftpanel = document.getElementById('leftpanel');
-const rightpanel = document.getElementById('rightpanel');
+var menu = document.getElementById('menu');
+var leftpanel = document.getElementById('leftpanel');
+var rightpanel = document.getElementById('rightpanel');
 
-// console.log(menu);
+const resize = document.getElementById('resizer');
 
-let menu_height = 20;
+var menu_height = 20;
 
 menu.style.height = menu_height + "px";
 
@@ -14,9 +14,14 @@ leftpanel.style.height = window.outerHeight - menu_height + "px";
 rightpanel.style.width = window.outerWidth - (leftpanel.offsetWidth + 30) + "px";
 rightpanel.style.height = window.outerHeight - menu_height + "px";
 
-window.addEventListener('resize', function() {
-    leftpanel.style.height = window.outerHeight - menu_height + "px";
+resize.style.height = window.outerHeight - menu_height + "px";
 
+window.addEventListener('resize', onResizePanel, false);
+
+function onResizePanel() {
+    leftpanel.style.height = window.outerHeight - menu_height + "px";
     rightpanel.style.height = window.outerHeight - menu_height + "px";
-    rightpanel.style.width = window.outerWidth - (leftpanel.offsetWidth + 30) + "px";
-});
+    rightpanel.style.width = window.outerWidth - (leftpanel.offsetWidth + 50) + "px";
+
+    resize.style.height = window.outerHeight - menu_height + "px";
+}
