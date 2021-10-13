@@ -1,0 +1,5 @@
+class BrowseFolder {
+    constructor() {
+        fetch('/');
+    }
+}

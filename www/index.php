@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,28 +12,27 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/leftpanel.css">
     <link rel="stylesheet" href="css/rightpanel.css">
+    <link rel="stylesheet" href="css/window_browse.css">
 
     <!-- Blank Style to Manipulate -->
     <style></style>
 
 </head>
+
 <body>
 
     <!-- Menu Bar -->
     <nav id="menu">
         <div class="menubar-button">
-            <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled/>
+            <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled />
             <label for="btn_simpan" class="btn">Simpan</label>
         </div>
         <div class="menubar-button">
-            <input type="button" id="btn_tentang" onclick="_tentang()"/>
+            <input type="button" id="btn_tentang" onclick="_tentang()" />
             <label for="btn_tentang" class="btn">Tentang</label>
         </div>
         <div class="menubar-button">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <input type="file" webkitdirectory dirname="" name="direktori" id="btn_open_project" />
-                <label for="btn_open_project" class="btn">Open Folder</label>
-            </form>
+            <button id="btn_open_project">Open Project</button>
         </div>
     </nav>
     <!-- // Menu Bar -->
@@ -55,7 +55,7 @@
                 oninput="_tes()"></textarea>
         </div>
         <!-- // Right Panel -->
-    </div> 
+    </div>
     <!-- // Container -->
 
     <!-- JS -->
@@ -63,10 +63,11 @@
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/shortcut.js"></script>
-    
+
     <!-- Komponen -->
     <script src="komponen/popup.js"></script>
     <script src="js/resizer.js"></script>
 
 </body>
+
 </html>

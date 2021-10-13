@@ -1,0 +1,68 @@
+#penahan {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+#windowku {
+    width: 480px;
+    height: 450px;
+    margin: auto;
+}
+
+#palang-window {
+    width: 100%;
+    height: 28px;
+    background-color: #595959;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#palang-close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    position: absolute;
+    right: 7px;
+    border-radius: 50%;
+}
+
+#dir-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+#disk-wrapper {
+    width: 20%;
+    /* background-color: blueviolet; */
+    border-right: 3px solid;
+}
+
+#folder-wrapper {
+    width: 78%;
+    /* background-color: coral; */
+    padding: 0 .25rem;
+}
+
+.disk-item {
+    text-align: center;
+    width: 100%;
+    margin-bottom: .5rem;
+    /* background-color: azure; */
+}
+
+.disk-item, .folder-item {
+    cursor: pointer;
+}
+
+.disk-item:hover,
+.folder-item:hover {
+    background-color: #e6e6e6;
+}

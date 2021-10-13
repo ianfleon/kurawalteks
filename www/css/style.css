@@ -9,6 +9,10 @@
     border: none;
 }
 
+body {
+    overflow: hidden;
+}
+
 #popup {
     min-width: 100px;
     min-height: 50px;
