@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Resizeable</title>
+    <style>
+        #sidebar {
+            width: 300px;
+            background-color: red;
+            height: 100vh;
+        }
+
+        #resizer {
+            width: 10px;
+            height: 100vh;
+            background-color: blue;
+            cursor: w-resize;
+        }
+
+        main {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="sidebar">
+            <p>Hai</p>
+        </div>
+        <div id="resizer"></div>
+    </main>
+
+    <script>
+
+        var startX, startY, startWidth, startHeight;
+
+        const sidebar = document.getElementById('sidebar');
+        const resize = document.getElementById('resizer');
+
+        resize.addEventListener('mousedown', __RESIZER_initDrag, false);
+
+        function __RESIZER_initDrag(e) {
+            startX = e.clientX;
+            startWidth = parseInt(document.defaultView.getComputedStyle(sidebar).width, 10);
+            document.documentElement.addEventListener('mousemove', __RESIZER_doDrag, false);
+            document.documentElement.addEventListener('mouseup', __RESIZER_stopDrag, false);
+        }
+
+        function __RESIZER_doDrag(e) {
+            sidebar.style.width = (startWidth + e.clientX - startX) + 'px';
+        }
+
+        function __RESIZER_stopDrag(e) {
+            document.documentElement.removeEventListener('mousemove', __RESIZER_doDrag, false);
+            document.documentElement.removeEventListener('mouseup', __RESIZER_stopDrag, false);
+        }
+
+    </script>
+</body>
+</html>

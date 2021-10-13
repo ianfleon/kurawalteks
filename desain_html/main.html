@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KurawalTeks</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../www/css/style.css">
+    <link rel="stylesheet" href="../www/css/menu.css">
+    <link rel="stylesheet" href="../www/css/leftpanel.css">
+    <link rel="stylesheet" href="../www/css/rightpanel.css">
+
+    <!-- Blank Style to Manipulate -->
+    <style></style>
+
+</head>
+
+<body>
+
+    <!-- Menu Bar -->
+    <nav id="menu">
+        <div class="menubar-button">
+            <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled />
+            <label for="btn_simpan" class="btn">Simpan</label>
+        </div>
+        <div class="menubar-button">
+            <input type="button" id="btn_tentang" onclick="_tentang()" />
+            <label for="btn_tentang" class="btn">Tentang</label>
+        </div>
+        <div class="menubar-button">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <input type="file" webkitdirectory dirname="" name="direktori" id="btn_open_project" />
+                <label for="btn_open_project" class="btn">Open Folder</label>
+            </form>
+        </div>
+    </nav>
+    <!-- // Menu Bar -->
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Left Panel -->
+        <div id="leftpanel" onselectstart="return false" onmousedown="return false">
+            <div id="dir-item">
+                <p>💽 Data C:</p>
+            </div>
+        </div>
+        <!-- // Left Panel -->
+
+        <!-- Resizer -->
+        <div id="resizer" onselectstart="return false" onmousedown="return false"></div>
+
+        <!-- Right Panel -->
+        <div id="rightpanel">
+            <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste
+                oninput="_tes()"></textarea>
+        </div>
+        <!-- // Right Panel -->
+    </div>
+    <!-- // Container -->
+
+    <!-- JS -->
+    <script src="../www/js/app.js"></script>
+    <script src="../www/js/script.js"></script>
+    <script src="../www/js/menu.js"></script>
+    <script src="../www/js/shortcut.js"></script>
+    <script src="../www/js/resizer.js"></script>
+
+    <!-- Komponen -->
+    <!-- <script src="komponen/popup.js"></script> -->
+
+</body>
+
+</html>
