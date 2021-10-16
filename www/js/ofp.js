@@ -11,12 +11,17 @@ __READ_FILE('dapur/read_drive.php', function(drives) {
 
         const el_disk = __CreateElement('div', '💽' + drives[k], {
             "class" : "disk-item",
+            "data-path" : drives[k],
             "onclick" : "_embed_folder('" + drives[k] + "'); "
             });
 
         disk_wrapper.appendChild(el_disk);
 
         el_disk.addEventListener('click', function () {
+            
+            window.localStorage.setItem('kurawal-dir-project', drives[k]);
+            console.log(window.localStorage.getItem('kurawal-dir-project'));
+
             el_disk.parentNode.childNodes.forEach(function (n) {
                 n.classList.remove('folder-item-selected');
             });
@@ -50,13 +55,17 @@ function _embed_folder(folders) {
 
             const folder_item = __CreateElement('div', '📁' + data[k], {
                 "class" : "folder-item ml-1",
+                "data-path" : dirnow + '/' + data[k],
                 "ondblclick" : "_embed_folder('" + dirnow + '/' + data[k] + "')"
             });
 
             folder_wrapper.appendChild(folder_item);
 
             folder_item.addEventListener('click', function () {
-                console.log(folder_item.parentNode.childNodes);
+
+                window.localStorage.setItem('kurawal-dir-project', dirnow + '/' + data[k]);
+                console.log(window.localStorage.getItem('kurawal-dir-project'));
+
                 folder_item.parentNode.childNodes.forEach(function (n) {
                     n.classList.remove('folder-item-selected');
                 });
