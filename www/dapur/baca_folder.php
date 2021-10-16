@@ -1,7 +1,5 @@
 <?php
 
-// $_POST['dir'] = 'E:/Belajar HTML';
-
 if (isset($_POST['dir'])) {
 
     $path = $_POST['dir'];
@@ -16,6 +14,5 @@ if (isset($_POST['dir'])) {
     }
 
     $hasil = array_diff($hasil, ['.', '..', 'System Volume Information', '$RECYCLE.BIN']);
-    // var_dump($hasil);
     echo json_encode($hasil);
 }

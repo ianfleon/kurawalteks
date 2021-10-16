@@ -1,12 +1,21 @@
-var uri = "E:/Reposaya/kurawalteks/www/fileku/";
+// console.log("KurawalTeks v0.1 dev\n-------");
 
-function __OPEN_DIR_PROJECT() {
+// const uri = "E:/Reposaya/kurawalteks/www/fileku/";
+// const uri = "E:/Belajar HTML";
+var sidebardir = document.getElementById('dir-item');
+
+function __OPEN_DIR_PROJECT(uri) {
     _POST(uri, "folder", "kurawal_core.php", function (data) {
         document.getElementById('dir-item').innerHTML = data;
     });
 }
 
-__OPEN_DIR_PROJECT();
+// __OPEN_DIR_PROJECT(uri);
+
+__READ_FILE('konfigurasi.json', function(data) {
+    // console.log(data.direktori_projek);
+    __OPEN_DIR_PROJECT(data.direktori_projek + '/');
+});
 
 /* Mengambil Data Direktori */
 function _POST(url, tipe, file, callback) {

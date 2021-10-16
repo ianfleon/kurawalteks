@@ -1,7 +1,5 @@
 __READ_FILE('dapur/read_drive.php', function(drives) {
 
-    console.log(drives);
-
     const key = Object.keys(drives);
     const disk_wrapper = document.getElementById('disk-wrapper');
 
