@@ -1,16 +1,28 @@
 __READ_FILE('dapur/read_drive.php', function(drives) {
 
+    console.log(drives);
+
     const key = Object.keys(drives);
     const disk_wrapper = document.getElementById('disk-wrapper');
+
+    disk_wrapper.innerHTML = "";
 
     key.forEach(function(k) {
 
         const el_disk = __CreateElement('div', '💽' + drives[k], {
             "class" : "disk-item",
-            "onclick" : "_embed_folder('" + drives[k] + "')"
+            "onclick" : "_embed_folder('" + drives[k] + "'); "
             });
 
         disk_wrapper.appendChild(el_disk);
+
+        el_disk.addEventListener('click', function () {
+            el_disk.parentNode.childNodes.forEach(function (n) {
+                n.classList.remove('folder-item-selected');
+            });
+            el_disk.classList.add('folder-item-selected');
+        });
+        
     });
 
 });
@@ -44,6 +56,7 @@ function _embed_folder(folders) {
             folder_wrapper.appendChild(folder_item);
 
             folder_item.addEventListener('click', function () {
+                console.log(folder_item.parentNode.childNodes);
                 folder_item.parentNode.childNodes.forEach(function (n) {
                     n.classList.remove('folder-item-selected');
                 });

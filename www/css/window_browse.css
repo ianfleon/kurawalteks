@@ -48,8 +48,8 @@
 
 #folder-wrapper {
     width: 78%;
-    /* background-color: coral; */
     padding: 0 .25rem;
+    overflow: scroll;
 }
 
 .disk-item {

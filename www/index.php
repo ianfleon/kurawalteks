@@ -59,7 +59,6 @@
     <!-- // Container -->
 
     <!-- JS -->
-    <script src="js/initElement.js"></script>
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
     <script src="js/resizer.js"></script>
