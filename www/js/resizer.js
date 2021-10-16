@@ -2,7 +2,6 @@ var startX, startY, startWidth, startHeight;
 
 resize.addEventListener('mousedown', __RESIZER_initDrag, false);
 
-
 function __RESIZER_initDrag(e) {
     startX = e.clientX;
     startWidth = parseInt(document.defaultView.getComputedStyle(leftpanel).width, 10);

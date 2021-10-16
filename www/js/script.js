@@ -1,7 +1,4 @@
-// console.log("KurawalTeks v0.1 dev\n-------");
-
 var uri = "E:/Reposaya/kurawalteks/www/fileku/";
-var sidebardir = document.getElementById('dir-item');
 
 function __OPEN_DIR_PROJECT() {
     _POST(uri, "folder", "kurawal_core.php", function (data) {

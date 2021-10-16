@@ -1,9 +1,3 @@
-var menu = document.getElementById('menu');
-var leftpanel = document.getElementById('leftpanel');
-var rightpanel = document.getElementById('rightpanel');
-
-const resize = document.getElementById('resizer');
-
 var menu_height = 20;
 
 menu.style.height = menu_height + "px";

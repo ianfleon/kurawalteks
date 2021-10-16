@@ -59,15 +59,15 @@
     <!-- // Container -->
 
     <!-- JS -->
-    <script src="js/init.js"></script>
+    <script src="js/initElement.js"></script>
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/shortcut.js"></script>
-
-    <!-- Komponen -->
-    <script src="komponen/popup.js"></script>
     <script src="js/resizer.js"></script>
+    <script src="js/menu.js"></script>
+
+    <script src="js/builder.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/shortcut.js"></script>
 
 </body>
 
