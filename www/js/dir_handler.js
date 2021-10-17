@@ -1,39 +1,57 @@
-var dir = document.getElementById('dir-items');
+var dir = document.getElementById('dir-project-wrapper');
 
 __GET_DIR_PROJECT(null, function (dirproject) {
 
     // console.log(typeof(dir.root_folder.jadwal.harian['0']));
 
-    _Loop_Dir_Folder(dirproject.root_folder);
+    const data = _Loop_Dir_Folder(dirproject.root_folder, __CreateElement('div', '', {
+        "id": "project-folder"
+    }));
+
+    console.log(data);
+
+    dir.appendChild(data);
+
     _Loop_Dir_File(dirproject.root_file);
 
 });
 
-function _Loop_Dir_Folder(obj) {
+function _Loop_Dir_Folder(obj, el) {
 
     if (obj instanceof Object) {
 
         const keys = Object.keys(obj);
 
-        keys.forEach(key => {
+        keys.forEach((key) => {
 
             if (typeof obj[key] != 'string') {
-                dir.appendChild(
-                    __CreateElement("div", '📁' + key, {
-                        "class": "dir-item"
-                    }))
+
+                var fol = __CreateElement("div", '📁' + key, {
+                    "class": "",
+                });
+
+                el.appendChild(fol);
+
+                // console.log(el);
+
+                _Loop_Dir_Folder(obj[key], fol);
+
+                
             } else {
-                dir.appendChild(
+                el.appendChild(
                     __CreateElement("div", '📄' + obj[key], {
-                        "class": "dir-item ml-1"
+                        "class": "dir-item-file ml-1"
                     }))
             }
 
-            _Loop_Dir_Folder(obj[key]);
-
+            
         });
-
+        
+        
     }
+
+    return el;
+
 
 }
 

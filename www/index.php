@@ -42,7 +42,7 @@
 
         <!-- Left Panel -->
         <div id="leftpanel">
-            <div id="dir-items"></div>
+            <div id="dir-project-wrapper"></div>
         </div>
         <!-- // Left Panel -->
 
