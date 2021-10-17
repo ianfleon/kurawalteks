@@ -42,7 +42,7 @@
 
         <!-- Left Panel -->
         <div id="leftpanel">
-            <div id="dir-item"></div>
+            <div id="dir-items"></div>
         </div>
         <!-- // Left Panel -->
 
@@ -58,15 +58,21 @@
     </div>
     <!-- // Container -->
 
-    <!-- JS -->
-    <script src="js/app.js"></script>
+    <!-- Core Script -->
     <script src="js/script.js"></script>
+
+    <!-- App Script -->
+    <script src="js/app.js"></script>
     <script src="js/resizer.js"></script>
     <script src="js/menu.js"></script>
 
+    <!-- Helper -->
     <script src="js/builder.js"></script>
-    <script src="js/init.js"></script>
     <script src="js/shortcut.js"></script>
+
+    <!-- Handler -->
+    <script src="js/handler/xhttp.js"></script>
+    <script src="js/dir_handler.js"></script>
 
 </body>
 

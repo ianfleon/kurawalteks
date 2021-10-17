@@ -1,4 +1,4 @@
-__READ_FILE('dapur/read_drive.php', function(drives) {
+__READ_FILE_JSON('dapur/read_drive.php', function(drives) {
 
     const key = Object.keys(drives);
     const disk_wrapper = document.getElementById('disk-wrapper');

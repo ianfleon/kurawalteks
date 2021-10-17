@@ -1,21 +1,4 @@
-// console.log("KurawalTeks v0.1 dev\n-------");
-
-// const uri = "E:/Reposaya/kurawalteks/www/fileku/";
-// const uri = "E:/Belajar HTML";
 var sidebardir = document.getElementById('dir-item');
-
-function __OPEN_DIR_PROJECT(uri) {
-    _POST(uri, "folder", "kurawal_core.php", function (data) {
-        document.getElementById('dir-item').innerHTML = data;
-    });
-}
-
-// __OPEN_DIR_PROJECT(uri);
-
-__READ_FILE('konfigurasi.json', function(data) {
-    // console.log(data.direktori_projek);
-    __OPEN_DIR_PROJECT(data.direktori_projek + '/');
-});
 
 /* Mengambil Data Direktori */
 function _POST(url, tipe, file, callback) {
@@ -34,6 +17,12 @@ function _POST(url, tipe, file, callback) {
 
 }
 
+function __OPEN_DIR_PROJECT(uri) {
+    _POST(uri, "folder", "kurawal_core.php", function (data) {
+        document.getElementById('dir-item').innerHTML = data;
+    });
+}
+
 function _read_file(namafile) {
     _POST(namafile, "file", "kurawal_core.php", function (data) {
         const isi = document.getElementById('isi-content');
@@ -42,11 +31,11 @@ function _read_file(namafile) {
     });
 }
 
-function _collapse_folder(namafolder) {
-    _POST(uri + '/' + namafolder, "folder", "kurawal_core.php", function (items) {
-        sidebardir.append(items);
-    });
-}
+// function _collapse_folder(namafolder) {
+//     _POST(uri + '/' + namafolder, "folder", "kurawal_core.php", function (items) {
+//         sidebardir.append(items);
+//     });
+// }
 
 function _simpan_file() {
 
@@ -63,9 +52,6 @@ function _simpan_file() {
             document.getElementById('btn-simpan').setAttribute('disabled', '');
         }
     }
-
-    // console.log(konten.attributes["data-path"]);
-    // console.log(konten);
 
     if (konten.hasAttribute('data-path')) {
         xhr.send("filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value));
@@ -94,33 +80,30 @@ function _simpan_file() {
 
 }
 
-function _tes() {
-    document.getElementById('btn-simpan').removeAttribute('disabled');
-}
+// function __READ_DIR(dir, callback) {
 
-function __READ_DIR(dir, callback) {
+//     const xhr = new XMLHttpRequest();
 
-    const xhr = new XMLHttpRequest();
+//     xhr.open("POST", "dapur/baca_folder.php", true);
+//     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
 
-    xhr.open("POST", "dapur/baca_folder.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
-
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+//     xhr.onreadystatechange = function () {
+//         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             
-            /* Hasil Drive */
-            let hasil = this.responseText;
-            hasil = JSON.parse(hasil);
+//             /* Hasil Drive */
+//             let hasil = this.responseText;
+//             hasil = JSON.parse(hasil);
 
-            callback(hasil, dir);
-        }
-    }
+//             callback(hasil, dir);
+//         }
+//     }
 
-    xhr.send('dir=' + encodeURI(dir));
+//     xhr.send('dir=' + encodeURI(dir));
 
-}
+// }
 
-function __READ_FILE(filename, callback) {
+/* Membaca File JSON */
+function __READ_FILE_JSON(filename, callback) {
 
     const xhr = new XMLHttpRequest();
 
@@ -136,7 +119,24 @@ function __READ_FILE(filename, callback) {
         }
     }
 
-    // xhr.send(encodeURI(dir));
     xhr.send();
 
+}
+
+/* Memanggil File JS */
+function __require_once(url) {
+    console.log("__require_once: " + url);
+    const s = document.createElement('script');
+    s.src = url;
+    s.setAttribute('data-scriptname', url);
+
+    if (document.querySelector('[data-scriptname]') === null) {
+        document.body.appendChild(s);
+        return true;
+    }
+}
+
+/* Menghapus File JS */
+function __delete_once(name) {
+    document.querySelector('[data-scriptname]').remove();
 }
