@@ -17,11 +17,11 @@ function _POST(url, tipe, file, callback) {
 
 }
 
-function __OPEN_DIR_PROJECT(uri) {
-    _POST(uri, "folder", "kurawal_core.php", function (data) {
-        document.getElementById('dir-item').innerHTML = data;
-    });
-}
+// function __OPEN_DIR_PROJECT(uri) {
+//     _POST(uri, "folder", "kurawal_core.php", function (data) {
+//         document.getElementById('dir-item').innerHTML = data;
+//     });
+// }
 
 function _read_file(namafile) {
     _POST(namafile, "file", "kurawal_core.php", function (data) {
@@ -30,12 +30,6 @@ function _read_file(namafile) {
         isi.value = data;
     });
 }
-
-// function _collapse_folder(namafolder) {
-//     _POST(uri + '/' + namafolder, "folder", "kurawal_core.php", function (items) {
-//         sidebardir.append(items);
-//     });
-// }
 
 function _simpan_file() {
 
@@ -80,27 +74,27 @@ function _simpan_file() {
 
 }
 
-// function __READ_DIR(dir, callback) {
+function __READ_DIR(dir, callback) {
 
-//     const xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
-//     xhr.open("POST", "dapur/baca_folder.php", true);
-//     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
+    xhr.open("POST", "dapur/baca_folder.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
 
-//     xhr.onreadystatechange = function () {
-//         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+    xhr.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             
-//             /* Hasil Drive */
-//             let hasil = this.responseText;
-//             hasil = JSON.parse(hasil);
+            /* Hasil Drive */
+            let hasil = this.responseText;
+            hasil = JSON.parse(hasil);
 
-//             callback(hasil, dir);
-//         }
-//     }
+            callback(hasil, dir);
+        }
+    }
 
-//     xhr.send('dir=' + encodeURI(dir));
+    xhr.send('dir=' + encodeURI(dir));
 
-// }
+}
 
 /* Membaca File JSON */
 function __READ_FILE_JSON(filename, callback) {

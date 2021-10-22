@@ -65,14 +65,16 @@
     <script src="js/app.js"></script>
     <script src="js/resizer.js"></script>
     <script src="js/menu.js"></script>
-
+    
     <!-- Helper -->
     <script src="js/builder.js"></script>
     <script src="js/shortcut.js"></script>
-
+    
     <!-- Handler -->
     <script src="js/handler/xhttp.js"></script>
     <script src="js/dir_handler.js"></script>
+    
+    <script src="js/main.js"></script>
 
 </body>
 
