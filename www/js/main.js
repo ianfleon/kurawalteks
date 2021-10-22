@@ -1,1 +1,0 @@
-/* Read Konfigurasi App */

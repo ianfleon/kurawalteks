@@ -17,12 +17,6 @@ function _POST(url, tipe, file, callback) {
 
 }
 
-// function __OPEN_DIR_PROJECT(uri) {
-//     _POST(uri, "folder", "kurawal_core.php", function (data) {
-//         document.getElementById('dir-item').innerHTML = data;
-//     });
-// }
-
 function _read_file(namafile) {
     _POST(namafile, "file", "kurawal_core.php", function (data) {
         const isi = document.getElementById('isi-content');

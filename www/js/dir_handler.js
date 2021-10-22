@@ -2,8 +2,6 @@ var dir = document.getElementById('dir-project-wrapper');
 
 function __SET_DIR_PROJECT(data_dir_project, dirproject) {
 
-    // console.log(dirproject);
-
     const data = _Loop_Dir_Folder(data_dir_project.root_folder, __CreateElement('div', '', {
         "id": "project-folder",
         "data-folder-path" : dirproject
@@ -15,7 +13,7 @@ function __SET_DIR_PROJECT(data_dir_project, dirproject) {
 
 }
 
-function _Loop_Dir_Folder(obj, el, dirnow) {
+function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
 
     if (obj instanceof Object) {
 
@@ -24,23 +22,20 @@ function _Loop_Dir_Folder(obj, el, dirnow) {
         keys.forEach((key, indx) => {
 
             if (typeof obj[key] != 'string') {
-
-                // console.log(el.dataset.folderpath);
                 
                 var fol = __CreateElement("div", '📁' + key, {
-                    "class" : "dir-item-folder",
+                    "class" : "dir-item-folder " + SUB_ITEM,
                     "data-folderpath" : dirnow + key
                 });
                 
                 el.appendChild(fol);
 
-                _Loop_Dir_Folder(obj[key], fol, dirnow + '/' + key);
-
+                _Loop_Dir_Folder(obj[key], fol, dirnow + '/' + key, "sub-item");
                 
             } else {
                 el.appendChild(
                     __CreateElement("div", '📄' + obj[key], {
-                        "class": "dir-item-file ml-1",
+                        "class": "dir-item-file ml-1 " + SUB_ITEM,
                         "onclick" : "_read_file('" + dirnow + '/' + obj[key] + "')"
                     }))
             }

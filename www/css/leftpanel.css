@@ -21,3 +21,7 @@
     cursor: w-resize;
     float: left;
 }
+
+.sub-item {
+    display: none;
+}

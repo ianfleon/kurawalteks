@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/kurawal_core.php';
 
-$_POST['folder'] = "E:/Reposaya/kurawalteks/www/fileku/";
+// $_POST['folder'] = "E:/Reposaya/kurawalteks/www/fileku/";
 
 $hasil = array();
 

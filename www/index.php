@@ -73,8 +73,6 @@
     <!-- Handler -->
     <script src="js/handler/xhttp.js"></script>
     <script src="js/dir_handler.js"></script>
-    
-    <script src="js/main.js"></script>
 
 </body>
 

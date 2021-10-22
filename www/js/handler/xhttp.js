@@ -38,5 +38,5 @@ function __GET_DIR_PROJECT(dir, callback)
         }
     }
 
-    xhr.send('dir=' + encodeURI(dir));
+    xhr.send('folder=' + encodeURI(dir));
 }
