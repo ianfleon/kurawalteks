@@ -27,10 +27,22 @@ function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
                     "class" : "dir-item-folder " + SUB_ITEM,
                     "data-folderpath" : dirnow + key
                 });
+
+                fol.addEventListener('click', function(e) {
+                    const children = e.target.childNodes;
+                    // console.log(children);
+                    children.forEach(c => {
+                        if (c.childNodes.length > 0) {
+                            // console.log(c);
+                            c.classList.toggle("sub-item-hidden");
+                        }
+                        // console.log(c.childNodes);
+                    });
+                });
                 
                 el.appendChild(fol);
 
-                _Loop_Dir_Folder(obj[key], fol, dirnow + '/' + key, "sub-item");
+                _Loop_Dir_Folder(obj[key], fol, dirnow + '/' + key, "sub-item-hidden");
                 
             } else {
                 el.appendChild(
