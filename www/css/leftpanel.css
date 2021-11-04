@@ -9,9 +9,15 @@
     overflow-y: scroll;
 }
 
+.dir-item-file, .dir-item-folder {
+    background-color: #fff;
+    position: relative
+}
+
 .dir-item-file:hover, .dir-item-folder:hover {
     cursor: pointer;
     background-color: rgb(207, 207, 207);
+    background-color: red;
 }
 
 #resizer {
