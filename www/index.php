@@ -58,22 +58,8 @@
     </div>
     <!-- // Container -->
 
-    <!-- Core Script -->
-    <script src="js/script.js"></script>
-
-    <!-- App Script -->
-    <script src="js/app.js"></script>
-    <script src="js/resizer.js"></script>
-    <script src="js/menu.js"></script>
+<script src="kurawalteks.js"></script>
     
-    <!-- Helper -->
-    <script src="js/builder.js"></script>
-    <script src="js/shortcut.js"></script>
-    
-    <!-- Handler -->
-    <script src="js/handler/xhttp.js"></script>
-    <script src="js/dir_handler.js"></script>
-
 </body>
 
 </html>

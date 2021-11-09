@@ -17,14 +17,6 @@ function _POST(url, tipe, file, callback) {
 
 }
 
-function _read_file(namafile) {
-    _POST(namafile, "file", "kurawal_core.php", function (data) {
-        const isi = document.getElementById('isi-content');
-        isi.setAttribute(['data-path'], namafile);
-        isi.value = data;
-    });
-}
-
 function _simpan_file() {
 
     const konten = document.getElementById("isi-content");
@@ -109,22 +101,4 @@ function __READ_FILE_JSON(filename, callback) {
 
     xhr.send();
 
-}
-
-/* Memanggil File JS */
-function __require_once(url) {
-    console.log("__require_once: " + url);
-    const s = document.createElement('script');
-    s.src = url;
-    s.setAttribute('data-scriptname', url);
-
-    if (document.querySelector('[data-scriptname]') === null) {
-        document.body.appendChild(s);
-        return true;
-    }
-}
-
-/* Menghapus File JS */
-function __delete_once(name) {
-    document.querySelector('[data-scriptname]').remove();
 }

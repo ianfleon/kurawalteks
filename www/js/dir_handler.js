@@ -42,9 +42,6 @@ function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
                         "class": "dir-item-file " + SUB_ITEM,
                         "onclick": "_Read_File('" + dirnow + '/' + obj[key] + "')"
                     });
-
-                    // filesub.addEventListener('click', _Stop_Propaganda);
-                    // filesub.removeEventListener('click', _Stop_Propaganda);
                     
                     el.appendChild(filesub);
             }
@@ -53,8 +50,14 @@ function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
     return el;
 }
 
-function _Read_File(e) {
-    _read_file(e);
+function _Read_File(uri) {
+    
+    PHPGue.xhttp("POST", "dapur/kurawal_core.php", "file=" + encodeURI(uri), "responseText", function(data) {
+        const isi = document.getElementById('isi-content');
+        isi.setAttribute(['data-path'], uri);
+        isi.value = data;
+    });
+
     event.stopImmediatePropagation();
 }
 
@@ -74,11 +77,6 @@ function _Colapse_Folder(e) {
     console.log(event.target);
     event.target.setAttribute("onclick", "_Expand_Folder(this)");
 
-}
-
-function _Stop_Propaganda() {
-    event.preventDefault();
-    event.stopPropagation();
 }
 
 function _Expand_Folder(e) {
