@@ -10,7 +10,6 @@ function __RESIZER_initDrag(e) {
 }
 
 function __RESIZER_doDrag(e) {
-
     onResizePanel();
     leftpanel.style.width = (startWidth + e.clientX - startX) + 'px';
 }

@@ -26,64 +26,76 @@ function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
                 var fol = __CreateElement("div", '📁' + key, {
                     "class": "dir-item-folder " + SUB_ITEM,
                     "data-folderpath": dirnow + key,
+                    "data-type-folder": "",
                     "onclick": "_Colapse_Folder(this)"
                 });
 
-                // fol.addEventListener('click', function(e) {
-
-                    // const children = e.target.childNodes;
-
-                    // console.log(e);
-
-                    // if (e.target.hasAttribute('data-folder-is-open')) {
-                    //     children.forEach(c => {
-                    //         if (c.childNodes.length > 0) {
-                    //             c.classList.add("sub-item-hidden");
-                    //         }
-                    //     });
-                    // } else {
-                    //     children.forEach(c => {
-                    //         if (c.childNodes.length > 0) {
-                    //             c.classList.remove("sub-item-hidden");
-                    //         }
-                    //     });
-                        
-                    //     e.target.setAttribute('data-folder-is-open', 'true');
-                    // }
-
-                // });
+                fol.addEventListener('click', _Colapse_Folder);
+                fol.removeEventListener('click', _Colapse_Folder);
 
                 el.appendChild(fol);
 
                 _Loop_Dir_Folder(obj[key], fol, dirnow + '/' + key, "sub-item-hidden pl-1");
 
             } else {
-                el.appendChild(
-                    __CreateElement("div", '📄' + obj[key], {
+                const filesub = __CreateElement("div", '📄' + obj[key], {
                         "class": "dir-item-file " + SUB_ITEM,
-                        "onclick": "_read_file('" + dirnow + '/' + obj[key] + "')"
-                    }))
+                        "onclick": "_Read_File('" + dirnow + '/' + obj[key] + "')"
+                    });
+
+                    // filesub.addEventListener('click', _Stop_Propaganda);
+                    // filesub.removeEventListener('click', _Stop_Propaganda);
+                    
+                    el.appendChild(filesub);
             }
         });
     }
     return el;
 }
 
-function _Colapse_Folder(e) {
-    // console.log(e.childNodes);
-    const children = e.childNodes;
-    children.forEach(c => {
-        if (c.childNodes.length > 0) {
-            c.classList.remove("sub-item-hidden");
-        }
-    });
+function _Read_File(e) {
+    _read_file(e);
+    event.stopImmediatePropagation();
+}
 
-    // e.parentElement.setAttribute('onclick', '_Expand_Folder(this)');
-    console.log(e.parentElement);
+function _Colapse_Folder(e) {
+
+    const children = e.childNodes;
+
+    if (children != undefined) {
+        children.forEach(c => {
+            if (c.childNodes.length > 0) {
+                c.classList.remove("sub-item-hidden");
+            }
+        });
+    }
+
+    event.stopImmediatePropagation();
+    console.log(event.target);
+    event.target.setAttribute("onclick", "_Expand_Folder(this)");
+
+}
+
+function _Stop_Propaganda() {
+    event.preventDefault();
+    event.stopPropagation();
 }
 
 function _Expand_Folder(e) {
-    // console.log(e);
+    
+    const children = e.childNodes;
+    if (children != undefined) {
+        children.forEach(c => {
+            if (c.childNodes.length > 0) {
+                c.classList.add("sub-item-hidden");
+            }
+        });
+    }
+
+    event.stopImmediatePropagation();
+    console.log(event.target);
+    event.target.setAttribute("onclick", "_Colapse_Folder(this)");
+
 }
 
 function _Loop_Dir_File(data, dirnow) {
