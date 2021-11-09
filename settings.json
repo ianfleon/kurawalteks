@@ -4,7 +4,7 @@
         "dpi_aware": true
     },
     "debugging": {
-        "show_console": true,
+        "show_console": false,
         "subprocess_show_console": false,
         "log_level": "DEBUG4",
         "log_file": "debug.log"
