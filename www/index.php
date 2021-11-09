@@ -56,9 +56,15 @@
         <!-- // Right Panel -->
     </div>
     <!-- // Container -->
-
-<script src="kurawalteks.js"></script>
     
+<script src="js/script.js"></script>
+<script src="js/ui/leftpanel/projectdir.js"></script>
+<script src="js/ui/app.js"></script>
+<script src="js/ui/resizer.js"></script>
+<script src="js/ui/menu/menu.js"></script>
+<script src="js/ui/shortcut.js"></script>
+<script src="js/utility/builder.js"></script>
+
 </body>
 
 </html>

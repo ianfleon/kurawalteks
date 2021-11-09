@@ -1,4 +1,6 @@
-__READ_FILE_JSON('dapur/read_drive.php', function(drives) {
+__XHTTP("POST", "dapur/read_drive.php", "", "responseText", function(drives) {
+
+    drives = JSON.parse(drives);
 
     const key = Object.keys(drives);
     const disk_wrapper = document.getElementById('disk-wrapper');
@@ -10,7 +12,7 @@ __READ_FILE_JSON('dapur/read_drive.php', function(drives) {
         const el_disk = __CreateElement('div', '💽' + drives[k], {
             "class" : "disk-item",
             "data-path" : drives[k],
-            "onclick" : "_embed_folder('" + drives[k] + "'); "
+            "onclick" : "_Embed_Folder('" + drives[k] + "'); "
             });
 
         disk_wrapper.appendChild(el_disk);
@@ -30,14 +32,14 @@ __READ_FILE_JSON('dapur/read_drive.php', function(drives) {
 
 });
 
-function _embed_folder(folders) {
+function _Embed_Folder(folders) {
 
     const dir_wrapper = document.getElementById('dir-wrapper');
     const folder_wrapper = document.getElementById('folder-wrapper');
     const disks = document.querySelectorAll('.disk-item');
     const btn_back_dir = document.getElementById('btn_dir_back');
 
-    __READ_DIR(folders, function (data, dirnow) {
+    _Read_Dir(folders, function (data, dirnow) {
 
         let back_dir = dirnow.split("/");
         back_dir.pop();
@@ -54,7 +56,7 @@ function _embed_folder(folders) {
             const folder_item = __CreateElement('div', '📁' + data[k], {
                 "class" : "folder-item ml-1",
                 "data-path" : dirnow + '/' + data[k],
-                "ondblclick" : "_embed_folder('" + dirnow + '/' + data[k] + "')"
+                "ondblclick" : "_Embed_Folder('" + dirnow + '/' + data[k] + "')"
             });
 
             folder_wrapper.appendChild(folder_item);

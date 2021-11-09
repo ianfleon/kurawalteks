@@ -1,3 +1,9 @@
+/* Run Konfigurasi */
+__XHTTP("POST", "konfigurasi.json", "", "responseText", function(data) {
+    data = JSON.parse(data);
+    _Get_Dir_Project(data.direktori_projek + '/', _Set_Dir_Project);
+});
+
 var sidebardir = document.getElementById('dir-item');
 
 function _Simpan_File() {
@@ -6,7 +12,7 @@ function _Simpan_File() {
     const isi = "filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value);
     
     if (konten.hasAttribute('data-path')) {
-        PHPGue.xhttp("POST", "dapur/simpan.php", isi, "responseText", function(response) {
+        __XHTTP("POST", "dapur/simpan.php", isi, "responseText", function(response) {
             console.log(response);
         });
     } else {
@@ -33,64 +39,46 @@ function _Simpan_File() {
 
 }
 
-function __READ_DIR(dir, callback) {
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.open("POST", "dapur/baca_folder.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
-
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            
-            /* Hasil Drive */
-            let hasil = this.responseText;
-            hasil = JSON.parse(hasil);
-
-            callback(hasil, dir);
-        }
-    }
-
-    xhr.send('dir=' + encodeURI(dir));
-
-}
-
-/* Membaca File JSON */
-function __READ_FILE_JSON(filename, callback) {
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.open("POST", filename, true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            
-            let hasil = this.responseText;
-            hasil = JSON.parse(hasil);
-
-            callback(hasil);
-        }
-    }
-
-    xhr.send();
-
-}
-
-function __READ_DIR(dir, callback) {
-
-    PHPGue.xhttp("POST", "dapur/baca_folder.php", "dir=" + encodeURI(dir), "responseText", function(hasil) {
-        hasil = JSON.parse(hasil);
-        callback(hasil, dir);
-        console.log(hasil);
+function _Read_File(uri) {
+    
+    __XHTTP("POST", "dapur/kurawal_core.php", "file=" + encodeURI(uri), "responseText", function(data) {
+        const isi = document.getElementById('isi-content');
+        isi.setAttribute(['data-path'], uri);
+        isi.value = data;
     });
 
+    event.stopImmediatePropagation();
 }
 
-function __GET_DIR_PROJECT(dir, callback)
-{
-    PHPGue.xhttp("POST", "dapur/read_project.php", "folder=" + encodeURI(dir), "responseText", function(hasil) {
-        hasil = JSON.parse(hasil);
-        callback(hasil, dir);
-    });
+/* Memanggil File JS */
+function __require_script(url) {
+    const s = document.createElement('script');
+    s.src = url;
+    s.setAttribute('data-scriptname', url);
+    document.body.appendChild(s);
+}
+
+/* Menghapus File JS */
+function __unrequire_script(name) {
+    document.querySelector(`[data-scriptname="${name}"`).remove();
+}
+
+function __XHTTP(method, action, parameter, respon, callback) {
+
+        /* Template:
+        * POST, file.php, id=1, json/teks, fungsisaya()
+        */
+
+        const xhr = new XMLHttpRequest();
+        xhr.open(method, action, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                callback(this[respon]);
+            }
+        }
+
+        xhr.send(parameter);
 
 }

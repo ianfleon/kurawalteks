@@ -1,6 +1,26 @@
+/* Membaca File JSON */
+function _Read_Dir(dir, callback) {
+
+    __XHTTP("POST", "dapur/baca_folder.php", "dir=" + encodeURI(dir), "responseText", function(hasil) {
+        hasil = JSON.parse(hasil);
+        callback(hasil, dir);
+        console.log(hasil);
+    });
+
+}
+
+function _Get_Dir_Project(dir, callback)
+{
+    __XHTTP("POST", "dapur/read_project.php", "folder=" + encodeURI(dir), "responseText", function(hasil) {
+        hasil = JSON.parse(hasil);
+        callback(hasil, dir);
+    });
+
+}
+
 var dir = document.getElementById('dir-project-wrapper');
 
-function __SET_DIR_PROJECT(data_dir_project, dirproject) {
+function _Set_Dir_Project(data_dir_project, dirproject) {
 
     const data = _Loop_Dir_Folder(data_dir_project.root_folder, __CreateElement('div', '', {
         "id": "project-folder",
@@ -50,17 +70,6 @@ function _Loop_Dir_Folder(obj, el, dirnow, SUB_ITEM = "") {
     return el;
 }
 
-function _Read_File(uri) {
-    
-    PHPGue.xhttp("POST", "dapur/kurawal_core.php", "file=" + encodeURI(uri), "responseText", function(data) {
-        const isi = document.getElementById('isi-content');
-        isi.setAttribute(['data-path'], uri);
-        isi.value = data;
-    });
-
-    event.stopImmediatePropagation();
-}
-
 function _Colapse_Folder(e) {
 
     const children = e.childNodes;
@@ -105,8 +114,3 @@ function _Loop_Dir_File(data, dirnow) {
             }))
     });
 }
-
-/* Run Konfigurasi */
-__READ_FILE_JSON('konfigurasi.json', function (data) {
-    __GET_DIR_PROJECT(data.direktori_projek + '/', __SET_DIR_PROJECT);
-});
