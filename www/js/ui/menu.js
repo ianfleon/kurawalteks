@@ -10,7 +10,7 @@ menu_btn_open_folder.addEventListener('click', function() {
         document.body.insertBefore(penahan, document.getElementById('menu'));
         penahan.innerHTML = data;
     });
-    __require_once('js/ofp.js');
+    __require_script('js/ofp.js');
 });
 
 function _tentang() {
@@ -18,6 +18,6 @@ function _tentang() {
 }
 
 function popup_browse_close(el) {
-    __delete_once('js/ofp.js');
+    __unrequire_script('js/ofp.js');
     document.getElementById('penahan').remove();
 }

@@ -3,7 +3,7 @@ class PHPGue {
     static xhttp(method, action, parameter, respon, callback) {
 
         /* Template:
-        * POST, file.php, id=1, fungsisaya()
+        * POST, file.php, id=1, json/teks, fungsisaya()
         */
 
         const xhr = new XMLHttpRequest();

@@ -1,42 +1,15 @@
 var sidebardir = document.getElementById('dir-item');
 
-/* Mengambil Data Direktori */
-function _POST(url, tipe, file, callback) {
-
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "dapur/" + file, true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
-
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            callback(this.responseText);
-        }
-    }
-
-    xhr.send(tipe + "=" + encodeURI(url));
-
-}
-
-function _simpan_file() {
+function _Simpan_File() {
 
     const konten = document.getElementById("isi-content");
-    const xhr = new XMLHttpRequest();
-
-    xhr.open("POST", "dapur/simpan.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // header
-
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            // console.log(this.responseText);
-            new Popup("Berhasil disimpan");
-            document.getElementById('btn-simpan').setAttribute('disabled', '');
-        }
-    }
-
+    const isi = "filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value);
+    
     if (konten.hasAttribute('data-path')) {
-        xhr.send("filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value));
+        PHPGue.xhttp("POST", "dapur/simpan.php", isi, "responseText", function(response) {
+            console.log(response);
+        });
     } else {
-
         const myBlob = new Blob([konten.value], {
             type: 'text/plain'
         });
@@ -100,5 +73,24 @@ function __READ_FILE_JSON(filename, callback) {
     }
 
     xhr.send();
+
+}
+
+function __READ_DIR(dir, callback) {
+
+    PHPGue.xhttp("POST", "dapur/baca_folder.php", "dir=" + encodeURI(dir), "responseText", function(hasil) {
+        hasil = JSON.parse(hasil);
+        callback(hasil, dir);
+        console.log(hasil);
+    });
+
+}
+
+function __GET_DIR_PROJECT(dir, callback)
+{
+    PHPGue.xhttp("POST", "dapur/read_project.php", "folder=" + encodeURI(dir), "responseText", function(hasil) {
+        hasil = JSON.parse(hasil);
+        callback(hasil, dir);
+    });
 
 }

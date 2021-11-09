@@ -51,8 +51,7 @@
 
         <!-- Right Panel -->
         <div id="rightpanel">
-            <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste
-                oninput="_tes()"></textarea>
+            <textarea id="isi-content" spellcheck="false" onchange onpropertychange onkeyuponpaste></textarea>
         </div>
         <!-- // Right Panel -->
     </div>
