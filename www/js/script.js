@@ -6,14 +6,22 @@ __XHTTP("POST", "konfigurasi.json", "", "responseText", function(data) {
 
 var sidebardir = document.getElementById('dir-item');
 
+function _Tentang() {
+    __CallPartial("popup.html", function(e) {
+    });
+}
+
 function _Simpan_File() {
 
     const konten = document.getElementById("isi-content");
-    const isi = "filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value);
     
     if (konten.hasAttribute('data-path')) {
+        const isi = "filepath=" + encodeURI(konten.attributes["data-path"].value) + "&" + "isifile=" + encodeURI(konten.value);
         __XHTTP("POST", "dapur/simpan.php", isi, "responseText", function(response) {
-            console.log(response);
+            document.getElementById("footer-notif").innerHTML = response;
+            setTimeout(() => {
+                document.getElementById("footer-notif").innerHTML = "";
+            }, 3000);
         });
     } else {
         const myBlob = new Blob([konten.value], {

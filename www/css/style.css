@@ -13,20 +13,8 @@ body {
     overflow: hidden;
 }
 
-#popup {
-    min-width: 100px;
-    min-height: 50px;
-    padding: .5rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .25);
-    background-color: #fff;
-    position: absolute;
-    z-index: 999;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.clear-float {
+    clear: both;
 }
 
 .ml-1 {

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/leftpanel.css">
     <link rel="stylesheet" href="css/rightpanel.css">
     <link rel="stylesheet" href="css/window_browse.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- Blank Style to Manipulate -->
     <style></style>
@@ -24,11 +25,11 @@
     <!-- Menu Bar -->
     <nav id="menu">
         <div class="menubar-button">
-            <input type="button" id="btn_simpan" onclick="_simpan_file()" disabled />
+            <input type="button" id="btn_simpan" onclick="_Simpan_File()" disabled />
             <label for="btn_simpan" class="btn">Simpan</label>
         </div>
         <div class="menubar-button">
-            <input type="button" id="btn_tentang" onclick="_tentang()" />
+            <input type="button" id="btn_tentang" onclick="_Tentang()" />
             <label for="btn_tentang" class="btn">Tentang</label>
         </div>
         <div class="menubar-button">
@@ -56,6 +57,12 @@
         <!-- // Right Panel -->
     </div>
     <!-- // Container -->
+
+    <div class="clear-float"></div>
+
+    <footer id="footer">
+        <p id="footer-notif"></p>
+    </footer>
     
 <script src="js/script.js"></script>
 <script src="js/ui/leftpanel/projectdir.js"></script>

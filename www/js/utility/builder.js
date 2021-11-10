@@ -13,5 +13,5 @@ function __CreateElement(tag, teks, attr) {
 
 /* Memanggil File HTML */
 function __CallPartial(url, callback) {
-    fetch(url).then(response => response.text()).then(data => callback(data));
+    fetch("/partial/" + url).then(response => response.text()).then(data => callback(data));
 }
