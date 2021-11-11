@@ -25,11 +25,11 @@
     <!-- Menu Bar -->
     <nav id="menu">
         <div class="menubar-button">
-            <input type="button" id="btn_simpan" onclick="_Simpan_File()" disabled />
+            <input type="button" id="btn_simpan" onclick="_Simpan_File()"/>
             <label for="btn_simpan" class="btn">Simpan</label>
         </div>
         <div class="menubar-button">
-            <input type="button" id="btn_tentang" onclick="_Tentang()" />
+            <input type="button" id="btn_tentang"/>
             <label for="btn_tentang" class="btn">Tentang</label>
         </div>
         <div class="menubar-button">
@@ -68,6 +68,7 @@
 <script src="js/ui/leftpanel/projectdir.js"></script>
 <script src="js/ui/app.js"></script>
 <script src="js/ui/resizer.js"></script>
+<script src="js/ui/notif.js"></script>
 <script src="js/ui/menu/menu.js"></script>
 <script src="js/ui/shortcut.js"></script>
 <script src="js/utility/builder.js"></script>

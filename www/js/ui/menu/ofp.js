@@ -1,4 +1,4 @@
-__XHTTP("POST", "dapur/read_drive.php", "", "responseText", function(drives) {
+__XHTTP("POST", "dapur/read_drive.php", "", "responseText", function (drives) {
 
     drives = JSON.parse(drives);
 
@@ -7,27 +7,27 @@ __XHTTP("POST", "dapur/read_drive.php", "", "responseText", function(drives) {
 
     disk_wrapper.innerHTML = "";
 
-    key.forEach(function(k) {
+    key.forEach(function (k) {
 
         const el_disk = __CreateElement('div', '💽' + drives[k], {
-            "class" : "disk-item",
-            "data-path" : drives[k],
-            "onclick" : "_Embed_Folder('" + drives[k] + "'); "
-            });
+            "class": "disk-item",
+            "data-path": drives[k],
+            "onclick": "_Embed_Folder('" + drives[k] + "'); "
+        });
 
         disk_wrapper.appendChild(el_disk);
 
         el_disk.addEventListener('click', function () {
-            
+
             window.localStorage.setItem('kurawal-dir-project', drives[k]);
-            console.log(window.localStorage.getItem('kurawal-dir-project'));
+            // console.log(window.localStorage.getItem('kurawal-dir-project'));
 
             el_disk.parentNode.childNodes.forEach(function (n) {
                 n.classList.remove('folder-item-selected');
             });
             el_disk.classList.add('folder-item-selected');
         });
-        
+
     });
 
 });
@@ -54,9 +54,9 @@ function _Embed_Folder(folders) {
             const data_path = data[k];
 
             const folder_item = __CreateElement('div', '📁' + data[k], {
-                "class" : "folder-item ml-1",
-                "data-path" : dirnow + '/' + data[k],
-                "ondblclick" : "_Embed_Folder('" + dirnow + '/' + data[k] + "')"
+                "class": "folder-item ml-1",
+                "data-path": dirnow + '/' + data[k],
+                "ondblclick": "_Embed_Folder('" + dirnow + '/' + data[k] + "')"
             });
 
             folder_wrapper.appendChild(folder_item);
@@ -64,7 +64,7 @@ function _Embed_Folder(folders) {
             folder_item.addEventListener('click', function () {
 
                 window.localStorage.setItem('kurawal-dir-project', dirnow + '/' + data[k]);
-                console.log(window.localStorage.getItem('kurawal-dir-project'));
+                // console.log(window.localStorage.getItem('kurawal-dir-project'));
 
                 folder_item.parentNode.childNodes.forEach(function (n) {
                     n.classList.remove('folder-item-selected');
@@ -75,4 +75,14 @@ function _Embed_Folder(folders) {
         });
     });
 
+}
+
+function _Set_Dir_Project() {
+
+    const path = window.localStorage.getItem("kurawal-dir-project");
+    __XHTTP("POST", "dapur/config.php", "direktori_projek=" + path.replace("//", "/"), "responseText", function (response) {
+        if (response == 1) {
+            location.reload();
+        }
+    });
 }

@@ -2,8 +2,6 @@
 
 require_once __DIR__ . '/kurawal_core.php';
 
-// $_POST['folder'] = "E:/Reposaya/kurawalteks/www/fileku/";
-
 $hasil = array();
 
 /* Handle Project Folder */
@@ -13,8 +11,10 @@ if (isset($_POST['folder'])) {
     // Get URL
     $folder = $_POST['folder'];
     $my_dir = array_diff(scandir($folder), ['.', '..']);
-    
-    // Looping Folder
+
+    $hasil_folder = array();
+    $hasil_folder = array();
+
     foreach ($my_dir as $my) {
 
         $item_path = $folder . $my;
@@ -25,7 +25,9 @@ if (isset($_POST['folder'])) {
 
     }
 
-    $hasil['root_folder'] = $hasil_folder;
+    if (count($hasil_folder) > 0) {
+        $hasil['root_folder'] = $hasil_folder;
+    }
 
     // Looping File
     foreach ($my_dir as $my) {
@@ -37,7 +39,10 @@ if (isset($_POST['folder'])) {
         }
     }
 
-    $hasil['root_file'] = $hasil_file; // enter in $hasil
+    if (count($hasil_file) > 0) {
+        $hasil['root_file'] = $hasil_file; // enter in $hasil
+    }
+
 
     // $hasil = array_merge($hasil_file, $hasil_folder);
 }

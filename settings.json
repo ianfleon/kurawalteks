@@ -25,7 +25,7 @@
     },
     "popup_window": {
         "icon": "",
-        "fixed_title": "",
+        "fixed_title": "KurawalTeks",
         "center_relative_to_parent": true,
         "default_size": [800, 600]
     },
@@ -46,16 +46,16 @@
         "external_drag": true,
         "external_navigation": true,
         "reload_page_F5": true,
-        "devtools_F12": true,
+        "devtools_F12": false,
         "remote_debugging_port": 0,
         "command_line_switches": {},
         "enable_downloads": true,
         "context_menu": {
             "enable_menu": true,
-            "navigation": true,
-            "print": true,
-            "view_source": true,
-            "open_in_external_browser": true,
+            "navigation": false,
+            "print": false,
+            "view_source": false,
+            "open_in_external_browser": false,
             "devtools": true
         }
     }

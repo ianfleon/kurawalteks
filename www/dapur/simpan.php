@@ -1,7 +1,7 @@
 <?php
 
-$isifile = $_POST['isifile']; // path file
-$filepath = $_POST['filepath']; // isi file baru
+$isifile = $_POST['isifile'];
+$filepath = $_POST['filepath'];
 
 if (is_writable($filepath)) {
 

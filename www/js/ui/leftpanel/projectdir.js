@@ -4,7 +4,6 @@ function _Read_Dir(dir, callback) {
     __XHTTP("POST", "dapur/baca_folder.php", "dir=" + encodeURI(dir), "responseText", function(hasil) {
         hasil = JSON.parse(hasil);
         callback(hasil, dir);
-        console.log(hasil);
     });
 
 }
@@ -14,6 +13,7 @@ function _Get_Dir_Project(dir, callback)
     __XHTTP("POST", "dapur/read_project.php", "folder=" + encodeURI(dir), "responseText", function(hasil) {
         hasil = JSON.parse(hasil);
         callback(hasil, dir);
+        console.log(hasil);
     });
 
 }
@@ -83,7 +83,7 @@ function _Colapse_Folder(e) {
     }
 
     event.stopImmediatePropagation();
-    console.log(event.target);
+    // console.log(event.target);
     event.target.setAttribute("onclick", "_Expand_Folder(this)");
 
 }
@@ -100,7 +100,7 @@ function _Expand_Folder(e) {
     }
 
     event.stopImmediatePropagation();
-    console.log(event.target);
+    // console.log(event.target);
     event.target.setAttribute("onclick", "_Colapse_Folder(this)");
 
 }
@@ -110,7 +110,7 @@ function _Loop_Dir_File(data, dirnow) {
         dir.appendChild(
             __CreateElement("div", '📄' + d, {
                 "class": "dir-item-file",
-                "onclick": "_read_file('" + dirnow + '/' + d + "')"
+                "onclick": "_Read_File('" + dirnow + '/' + d + "')"
             }))
     });
 }
